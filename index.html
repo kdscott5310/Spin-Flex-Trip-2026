@@ -1237,162 +1237,31 @@
   }
 
   /* ─── SUGGESTIONS ─── */
-  #suggestions {
-    padding: var(--section-pad) 20px;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    background: rgba(201,168,76,0.02);
-  }
-  #suggestions h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    text-align: center;
-    margin-bottom: 8px;
-    color: var(--cream);
-  }
-  .suggestions-sub {
-    text-align: center;
-    color: var(--warm-gray);
-    font-size: 0.85rem;
-    margin-bottom: 36px;
-    line-height: 1.6;
-  }
-  .suggestions-layout {
-    max-width: 860px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: start;
-  }
-  @media (max-width: 680px) {
-    .suggestions-layout { grid-template-columns: 1fr; }
-  }
-  .suggestions-info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .suggestion-step {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 14px 16px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 10px;
-  }
-  .suggestion-step-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--gold);
-    flex-shrink: 0;
-    width: 24px;
-    margin-top: 1px;
-  }
-  .suggestion-step-text {
-    font-size: 0.82rem;
-    color: #B0A89E;
-    line-height: 1.6;
-  }
-  .suggestion-step-text strong { color: var(--cream); }
-  .suggestions-form-panel {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 14px;
-    overflow: hidden;
-    position: relative;
-  }
-  .suggestions-form-header {
-    padding: 16px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(201,168,76,0.05);
-  }
-  .suggestions-form-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--cream);
-  }
-  .suggestions-form-badge {
-    margin-left: auto;
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background: rgba(76,175,80,0.15);
-    border: 1px solid rgba(76,175,80,0.3);
-    color: #4CAF50;
-    padding: 3px 8px;
-    border-radius: 4px;
-  }
-  .suggestions-form-body {
-    padding: 20px;
-  }
-  .suggest-open-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 14px 24px;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-    color: var(--dark);
-    border: none;
-    border-radius: 10px;
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: opacity 0.2s, transform 0.15s;
-    text-decoration: none;
-    margin-bottom: 14px;
-  }
-  .suggest-open-btn:hover { opacity: 0.9; transform: translateY(-1px); }
-  .suggest-open-btn span { font-size: 1.1rem; }
-  .suggest-inline-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 100%;
-    padding: 9px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 8px;
-    color: var(--warm-gray);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.78rem;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .suggest-inline-toggle:hover { border-color: rgba(255,255,255,0.15); color: var(--cream); }
-  .suggest-iframe-wrapper {
-    display: none;
-    margin-top: 14px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.06);
-  }
-  .suggest-iframe-wrapper.open { display: block; }
-  .suggest-iframe-wrapper iframe {
-    width: 100%;
-    height: 520px;
-    border: none;
-    background: white;
-    display: block;
-  }
-  .suggestions-note {
-    margin-top: 14px;
-    font-size: 0.74rem;
-    color: var(--warm-gray);
-    text-align: center;
-    line-height: 1.5;
-  }
-  .suggestions-note a { color: var(--gold); text-decoration: none; }
+  #suggestions{padding:var(--section-pad) 20px;border-top:1px solid rgba(255,255,255,0.05);background:rgba(201,168,76,0.02)}
+  #suggestions h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);text-align:center;margin-bottom:8px;color:var(--cream)}
+  .suggestions-sub{text-align:center;color:var(--warm-gray);font-size:0.85rem;margin-bottom:36px;line-height:1.6}
+  .suggestions-layout{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+  @media(max-width:680px){.suggestions-layout{grid-template-columns:1fr}}
+  .suggestions-info{display:flex;flex-direction:column;gap:16px}
+  .suggestion-step{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px}
+  .suggestion-step-num{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);flex-shrink:0;width:24px}
+  .suggestion-step-text{font-size:0.82rem;color:#B0A89E;line-height:1.6}
+  .suggestion-step-text strong{color:var(--cream)}
+  .suggestions-form-panel{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:14px;overflow:hidden}
+  .suggestions-form-header{padding:16px 20px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:10px;background:rgba(201,168,76,0.05)}
+  .suggestions-form-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--cream)}
+  .suggestions-form-badge{margin-left:auto;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;background:rgba(76,175,80,0.15);border:1px solid rgba(76,175,80,0.3);color:#4CAF50;padding:3px 8px;border-radius:4px}
+  .suggestions-form-body{padding:20px}
+  .suggest-open-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px 24px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);color:var(--dark);border:none;border-radius:10px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;cursor:pointer;transition:opacity 0.2s,transform 0.15s;text-decoration:none;margin-bottom:14px}
+  .suggest-open-btn:hover{opacity:0.9;transform:translateY(-1px)}
+  .suggest-inline-toggle{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:9px;background:transparent;border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:var(--warm-gray);font-family:'DM Sans',sans-serif;font-size:0.78rem;cursor:pointer;transition:all 0.2s}
+  .suggest-inline-toggle:hover{border-color:rgba(255,255,255,0.15);color:var(--cream)}
+  .suggest-iframe-wrapper{display:none;margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.06)}
+  .suggest-iframe-wrapper.open{display:block}
+  .suggest-iframe-wrapper iframe{width:100%;height:520px;border:none;background:white;display:block}
+  .suggestions-note{margin-top:14px;font-size:0.74rem;color:var(--warm-gray);text-align:center;line-height:1.5}
+  .suggestions-note a{color:var(--gold);text-decoration:none}
+
 </style>
 </head>
 <body>
@@ -1405,10 +1274,10 @@
   <p class="hero-sub">Barcelona · Ibiza · Mallorca</p>
   <div class="hero-dates">✈️&nbsp; May 2026 &nbsp;·&nbsp; All Four Legs</div>
   <div class="leg-pills">
-    <span class="pill pill-bcn">📍 Barcelona · May 17–18 '26 · 8 ppl</span>
-    <span class="pill pill-ibz">🎉 Ibiza · May 21–23 '26 · 8 ppl</span>
-    <span class="pill pill-fin">🎤 BCN Finale · May 23–25 '26 · 4 ppl</span>
-    <span class="pill pill-mal">🌿 Mallorca · May 18–21, 2026 · 8 ppl</span>
+    <span class="pill pill-bcn">📍 Barcelona · May 17–18 · 8 ppl</span>
+    <span class="pill pill-mal">🌿 Mallorca · May 18–21 · 8 ppl</span>
+    <span class="pill pill-ibz">🎉 Ibiza · May 21–23 · 8 ppl</span>
+    <span class="pill pill-fin">🎤 BCN Finale · May 23–25 · 4 ppl</span>
   </div>
   <p class="vibes" style="margin-top:28px;">Party / Nightlife &nbsp;·&nbsp; Beach &amp; Relaxation &nbsp;·&nbsp; Mountains &amp; Sea</p>
 </section>
@@ -1430,10 +1299,10 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#leg1" class="bcn-link">📍 BCN '25</a>
-  <a href="#leg2" class="ibz-link">🎉 Ibiza '25</a>
-  <a href="#leg3" class="fin-link">🎤 Finale '25</a>
-  <a href="#mallorca" class="mal-link">🌿 Mallorca '26</a>
+  <a href="#leg1" class="bcn-link">📍 BCN</a>
+  <a href="#mallorca" class="mal-link">🌿 Mallorca</a>
+  <a href="#leg2" class="ibz-link">🎉 Ibiza</a>
+  <a href="#leg3" class="fin-link">🎤 Finale</a>
   <a href="#checklist" class="list-link">📋 Bookings</a>
   <a href="#budget" class="list-link">💰 Budget</a>
   <a href="#rsvp" class="list-link">🙋 RSVP</a>
@@ -1486,13 +1355,13 @@
           <div class="event-time">8:00 PM</div>
           <div class="event-content">
             <div class="event-name"><span class="event-icon">🍽️</span>Vinitus Barcelona</div>
-            <div class="event-desc">Carrer del Consell de Cent 333 &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · One of Barcelona's most beloved tapas restaurants — a local institution right in Eixample. Famous for their pintxos, fresh seafood, and standout dishes like the anchovies, jamón croquetas and grilled octopus. Lively, fun atmosphere that's perfect for a first-night group dinner. Arrive hungry. ~€35–50/person.<br><span class="price">Book ahead for 8 · vinitus.com · +34 934 53 47 48</span></div>
+            <div class="event-desc">Carrer del Consell de Cent 333 &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · One of Barcelona's most beloved tapas restaurants — a local institution right in Eixample. Famous for their pintxos, fresh seafood, and standout dishes like the anchovies, jamón croquetas and grilled octopus. ~€35–50/person.<br><span class="price">Book ahead for 8 · vinitus.com · +34 934 53 47 48</span></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- SUN MAY 18 -->
+    <!-- MON MAY 18 -->
     <div class="day-block open">
       <div class="day-title" onclick="toggleDay(this)">
         <span class="day-badge">Mon May 18</span>
@@ -1545,7 +1414,220 @@
     </div>
 
     <div class="tip-banner">
-      ⚠️ <strong>Note:</strong> Flights arrive Ibiza on May 21, 2026 at 3:00 PM. May 19–20 are free days not detailed in this itinerary.
+      ⚠️ <strong>Note:</strong> Flights arrive Ibiza on May 21 at 3:00 PM. May 19–20 are free days not detailed in this itinerary.
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ MALLORCA 2026 ════════════════ -->
+<section id="mallorca">
+  <div class="leg-header mal">
+    <span class="leg-number">2026 Trip · May 18–21 · Group of 8</span>
+    <h2>Mal<span>lorca</span></h2>
+    <p class="leg-meta">🌿 Zel Mallorca, Palmanova &nbsp;·&nbsp; Arrive 16:15 · Depart 14:20</p>
+  </div>
+
+  <div class="leg-body mal">
+
+    <!-- DAY 1 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sun May 18</span>
+        <span class="day-label">Arrival · Golden Hour · Restaurant Illeta <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">4:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Land — Palma Airport (PMI)</div>
+            <div class="event-desc">Touch down at PMI. Clear arrivals, collect bags. Palmanova is about 20 minutes from the airport.<br><span class="price">Pre-book 2 taxis or minibus · ~€25–30/vehicle each way</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">5:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏨</span>Check-in — Zel Mallorca, Palmanova</div>
+            <div class="event-desc">Beachfront hotel right on the sand. Drop bags, freshen up, get settled. Pool, sauna and gym on-site. The breakfast buffet is rated the best hotel breakfast in Spain.<br><span class="price">Ask for sea-view rooms together · +34 971 68 01 50</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">6:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍺</span>First Drinks — Es Carregador Beach</div>
+            <div class="event-desc">Walk straight out of the hotel to the beach. Grab cold drinks at a beach bar and soak up your first Mallorcan golden hour. Sunset in May is around 9 PM.<br><span class="price">Free · 5-min walk from hotel · Save your appetite for Illeta!</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">8:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍽️</span>Dinner — Restaurant Illeta, Camp de Mar</div>
+            <div class="event-desc">One of Mallorca's most magical dining spots — the restaurant sits on a tiny island connected to shore by a wooden footbridge, completely surrounded by the sea. Standouts: paella, gambas al ajillo, Iberico starters and legendary Sangria.<br>Request an edge table — arriving at 8:15 PM catches the last golden light over the water.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW — no walk-ins · +34 637 077 870 · ~€45–60/person</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Mon May 19</span>
+        <span class="day-label">Valldemossa · Deia · Gran Folies Dinner <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
+            <div class="event-desc">Included. Fuel up at the legendary hotel buffet. Today you're heading into the UNESCO Tramuntana mountains. Leave hotel by 8:45 AM.<br><span class="price">Pick up rental cars evening before so you leave straight after breakfast</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">9:45 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">⛪</span>Valldemossa — Carthusian Monastery & Village</div>
+            <div class="event-desc">The 14th-century monastery where Chopin and George Sand wintered in 1838. See Chopin's Pleyel piano, their rooms, and an ancient monastic pharmacy. The stone village has sweeping mountain views. Allow 1.5–2 hours.<br>Buy the combined ticket including the tower — views from the top are the highlight. A live Chopin mini-concert often opens the tour.<br><span class="price">~€10/person · 45 min drive · Book at cartuxa.es</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">12:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏘️</span>Deia — Mallorca's Most Beautiful Village</div>
+            <div class="event-desc">Drive the spectacular cliff road from Valldemossa to Deia — one of the best drives in Europe. A tiny hilltop village of golden stone houses draped in bougainvillea, surrounded by olive groves and mountains plunging to the sea. Climb to the church for panoramic views.<br>Cala Deia — a hidden pebble beach — is a 10-min walk downhill for a quick swim. Allow 1 hour.<br><span class="price">Free · 15 min from Valldemossa</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">1:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🥘</span>Lunch — Ca'n Costa (Valldemossa Road)</div>
+            <div class="event-desc">Perfectly placed between Deia and Valldemossa. Best authentic Mallorcan food on the island — Arroz Brut (aromatic spiced rice), slow-cooked meats, huge portions and the best red sangria you'll ever taste.<br>Ca'n Costa serves lunch Mon–Sat 1–4 PM. Day 2 lunch is the ideal visit.<br><span class="price">~€35–45/person · Call +34 971 612 263 to reserve for 8</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">3:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚗</span>Scenic Drive South — MA-10 Coast Road</div>
+            <div class="event-desc">One of Europe's great drives — the MA-10 winds along the Tramuntana coast past Sa Foradada rock arch, Banyalbufar terraces and the Port d'Andratx marina.<br><span class="price">Stop at Sa Foradada viewpoint (15 mins) — rock arch jutting into the sea · ~1 hr to Port d'Andratx</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🌊</span>Dinner — Beach Club Gran Folies, Port d'Andratx</div>
+            <div class="event-desc">One of Mallorca's most glamorous beach club restaurants, perched on the rocks above the sea. Spectacular cliffside views, Balearic island vibes. The seafood paella is the standout. Sunset from this terrace is extraordinary.<br>Book a restaurant table (not just daybeds). Ask for a sea-view spot. Consider a taxi back so everyone can drink freely.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · granfolies.com · +34 971 671 094 · ~€55–75/person</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Tue May 20</span>
+        <span class="day-label">Soller Boat Charter · Palma Last Night <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
+            <div class="event-desc">Early start — big day. Fuel up at the hotel buffet then drive north to Port de Soller. Allow 1 hour for the mountain drive. Leave by 8:45 AM.<br><span class="price">Take the old Coll de Soller mountain road for spectacular views (adds 20 mins)</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚃</span>Soller Town — Vintage Tram to Port (Optional)</div>
+            <div class="event-desc">Park in Soller and ride the legendary 1913 wooden tram down through orange and lemon groves to Port de Soller — 20 minutes of pure nostalgia.<br><span class="price">~€8/person each way · trendesoller.com · First departure ~10:10 AM from Plaza de España</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">⛵</span>Boat Charter — Port de Soller</div>
+            <div class="event-desc">Set sail along the dramatic Tramuntana coastline — the most spectacular stretch of sea in Mallorca. Hidden turquoise coves, sea caves, sheer cliffs. Swim at Cala Tuent, explore the secret cave at Cala Deia, anchor at Sa Foradada.<br>BBQ lunch on board: fresh fish, grilled meats, salads. Drinks included: sangria, Mallorcan white wine, cold beers. Water toys: paddleboards, snorkelling gear, kayaks. 4–5 hours.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · ~€80–120/person · Request BBQ food + drinks package for 8</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time"></div>
+          <div class="event-content">
+            <div class="event-name" style="font-size:0.78rem;color:var(--warm-gray);font-family:'DM Sans'">⛵ Boat Operators — message all three, take first available:</div>
+            <div class="event-desc">
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sail La Vie (Xico)</strong> &nbsp;<a href="https://saillavie.com" target="_blank" style="color:var(--gold);text-decoration:none">saillavie.com</a> · +34 611 708 226</div>
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Bonnie Lass Charters (Pete)</strong> · +34 654 234 897</div>
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sails Up Mallorca (Alvaro)</strong> · +34 646 099 885</div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">4:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍦</span>Back in Port de Soller — Explore & Relax</div>
+            <div class="event-desc">Stroll the horseshoe harbour, grab an ice cream or coffee. Pick up a bottle of Mallorcan Hierbas liqueur or the island's famous orange liqueur as a souvenir. Then drive south for dinner.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍷</span>Dinner — Fervor Palma</div>
+            <div class="event-desc">Carrer de Can Verí 4, Palma Old Town &nbsp;<span class="stars">⭐ 4.5</span>&nbsp; · A buzzing, design-forward restaurant in the heart of Palma's old town. Open Tuesdays and great for groups — modern Spanish cuisine, excellent charcoal-grilled meats and creative tapas. Lively atmosphere that flows perfectly into a late-night Palma cocktail bar crawl.<br><span class="price">~€35–50/person · Book ahead · <a href="https://grupocardon.com/restaurantes/fervor" target="_blank" style="color:var(--gold);text-decoration:none">grupocardon.com/restaurantes/fervor</a></span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍸</span>Last Night Out — Palma Old Town</div>
+            <div class="event-desc"><strong style="color:var(--cream)">After Landing Cocktail Art</strong> — 5 stars, free welcome shot, open until 1 AM<br><strong style="color:var(--cream)">Chapeau Palma</strong> — Top-500 worldwide, open until 2 AM<br>Both in the old town, walking distance from each other.<br><span class="price">~€12/cocktail · Walk-in friendly</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Wed May 21</span>
+        <span class="day-label">La Seu Cathedral · Fly Home ✈️ <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Final Breakfast — Zel Mallorca</div>
+            <div class="event-desc">One last time at the best hotel breakfast buffet in Spain. Savour it. Check-out is 11 AM — check out by 10:00 AM and store luggage at reception while you head to the cathedral.<br><span class="price">Ask to store bags until you collect them on the way to the airport</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:15 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🕌</span>La Seu Cathedral, Palma</div>
+            <div class="event-desc">Palma's breathtaking Gothic cathedral right on the seafront. One of the finest in Europe. Gaudí-redesigned interiors with enormous rose windows casting coloured light across the nave. Allow 45–50 minutes. Then walk the waterfront Paseo Marítimo for one last look at the Bay of Palma.<br><span class="price">€9 entry · Book tickets in advance at catedraldemallorca.org · Dress modestly</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:45 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚗</span>Drive to Palma Airport (PMI)</div>
+            <div class="event-desc">Collect luggage from Zel Mallorca on the way, then head to PMI. Return rental cars at the airport. Allow 90 mins minimum before departure.<br><span class="price">~20 min from Palma · Leave by 11:45 AM at the latest</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">2:20 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Flight Departs — 14:20 · Adios Mallorca</div>
+            <div class="event-desc">Wheels up. Three days of sun, sea, mountains, food, wine and memories. Mallorca has a way of pulling people back. Until next time.<br><span class="price">Duty-free pick: Mallorcan Hierbas liqueur or island gin — the best island souvenirs</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mallorca Booking Checklist (inline tip) -->
+    <div class="tip-banner">
+      🗓️ <strong>Mallorca 2026 — Book immediately:</strong> Restaurant Illeta (+34 637 077 870, no walk-ins) · Soller Boat Charter (WhatsApp all 3 operators) · Gran Folies (granfolies.com) · Valldemossa Monastery (cartuxa.es) · La Seu Cathedral (catedraldemallorca.org) · 2–3 rental cars · Airport transfer May 18 ~5:15 PM
     </div>
 
   </div>
@@ -1805,7 +1887,7 @@
       <div class="check-box"></div>
       <div class="check-text">
         <div class="check-name">🎤 Bad Bunny Tickets (URGENT)</div>
-        <div class="check-where"><a href="https://ticketmaster.es" target="_blank">Ticketmaster.es</a> / <a href="https://livenation.es" target="_blank">Livenation.es</a> / StubHub · May 23, 2026 · Estadi Olímpic</div>
+        <div class="check-where"><a href="https://ticketmaster.es" target="_blank">Ticketmaster.es</a> / <a href="https://livenation.es" target="_blank">Livenation.es</a> / StubHub · May 23 · Estadi Olímpic</div>
       </div>
       <span class="check-urgent">Urgent</span>
     </div>
@@ -1837,7 +1919,7 @@
     <div class="check-item" onclick="toggleCheck(this)">
       <div class="check-box"></div>
       <div class="check-text">
-        <div class="check-name">🏖️ Blue Marlin Ibiza — May 21, 2026, 5PM · 8 ppl</div>
+        <div class="check-name">🏖️ Blue Marlin Ibiza — May 21, 5PM · 8 ppl</div>
         <div class="check-where"><a href="https://bluemarlinibiza.com" target="_blank">bluemarlinibiza.com</a> · +34 971 410 117 · Cala Jondal</div>
       </div>
     </div>
@@ -1845,7 +1927,7 @@
     <div class="check-item" onclick="toggleCheck(this)">
       <div class="check-box"></div>
       <div class="check-text">
-        <div class="check-name">🏖️ Zazú Beach Club — May 22, 2026 full day · 8 ppl</div>
+        <div class="check-name">🏖️ Zazú Beach Club — May 22 full day · 8 ppl</div>
         <div class="check-where"><a href="https://zazuibiza.com" target="_blank">zazuibiza.com</a></div>
       </div>
     </div>
@@ -1853,7 +1935,7 @@
     <div class="check-item" onclick="toggleCheck(this)">
       <div class="check-box"></div>
       <div class="check-text">
-        <div class="check-name">🦞 El Chiringuito Es Cavallet — May 22, 2026, dinner · 8 ppl</div>
+        <div class="check-name">🦞 El Chiringuito Es Cavallet — May 22, dinner · 8 ppl</div>
         <div class="check-where"><a href="https://elchiringuitoescavallet.com" target="_blank">elchiringuitoescavallet.com</a></div>
       </div>
     </div>
@@ -2048,219 +2130,6 @@
   </div>
 </section>
 
-<!-- ════════════════ MALLORCA 2026 ════════════════ -->
-<section id="mallorca">
-  <div class="leg-header mal">
-    <span class="leg-number">2026 Trip · May 18–21 · Group of 8</span>
-    <h2>Mal<span>lorca</span></h2>
-    <p class="leg-meta">🌿 Zel Mallorca, Palmanova &nbsp;·&nbsp; Arrive 16:15 · Depart 14:20</p>
-  </div>
-
-  <div class="leg-body mal">
-
-    <!-- DAY 1 -->
-    <div class="day-block open">
-      <div class="day-title" onclick="toggleDay(this)">
-        <span class="day-badge">Sun May 18</span>
-        <span class="day-label">Arrival · Golden Hour · Restaurant Illeta <span class="group-tag">Group of 8</span></span>
-        <span class="chevron">▼</span>
-      </div>
-      <div class="events">
-        <div class="event">
-          <div class="event-time">4:15 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">✈️</span>Land — Palma Airport (PMI)</div>
-            <div class="event-desc">Touch down at PMI. Clear arrivals, collect bags. Palmanova is about 20 minutes from the airport.<br><span class="price">Pre-book 2 taxis or minibus · ~€25–30/vehicle each way</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">5:15 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🏨</span>Check-in — Zel Mallorca, Palmanova</div>
-            <div class="event-desc">Beachfront hotel right on the sand. Drop bags, freshen up, get settled. Pool, sauna and gym on-site. The breakfast buffet is rated the best hotel breakfast in Spain.<br><span class="price">Ask for sea-view rooms together · +34 971 68 01 50</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">6:30 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍺</span>First Drinks — Es Carregador Beach</div>
-            <div class="event-desc">Walk straight out of the hotel to the beach. Grab cold drinks at a beach bar and soak up your first Mallorcan golden hour. Sunset in May is around 9 PM.<br><span class="price">Free · 5-min walk from hotel · Save your appetite for Illeta!</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">8:15 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍽️</span>Dinner — Restaurant Illeta, Camp de Mar</div>
-            <div class="event-desc">One of Mallorca's most magical dining spots — the restaurant sits on a tiny island connected to shore by a wooden footbridge, completely surrounded by the sea. Standouts: paella, gambas al ajillo, Iberico starters and legendary Sangria.<br>Request an edge table — arriving at 8:15 PM catches the last golden light over the water.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW — no walk-ins · +34 637 077 870 · ~€45–60/person</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DAY 2 -->
-    <div class="day-block open">
-      <div class="day-title" onclick="toggleDay(this)">
-        <span class="day-badge">Mon May 19</span>
-        <span class="day-label">Valldemossa · Deia · Gran Folies Dinner <span class="group-tag">Group of 8</span></span>
-        <span class="chevron">▼</span>
-      </div>
-      <div class="events">
-        <div class="event">
-          <div class="event-time">8:00 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
-            <div class="event-desc">Included. Fuel up at the legendary hotel buffet. Today you're heading into the UNESCO Tramuntana mountains. Leave hotel by 8:45 AM.<br><span class="price">Pick up rental cars evening before so you leave straight after breakfast</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">9:45 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">⛪</span>Valldemossa — Carthusian Monastery & Village</div>
-            <div class="event-desc">The 14th-century monastery where Chopin and George Sand wintered in 1838. See Chopin's Pleyel piano, their rooms, and an ancient monastic pharmacy. The stone village has sweeping mountain views. Allow 1.5–2 hours.<br>Buy the combined ticket including the tower — views from the top are the highlight. A live Chopin mini-concert often opens the tour.<br><span class="price">~€10/person · 45 min drive · Book at cartuxa.es</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">12:00 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🏘️</span>Deia — Mallorca's Most Beautiful Village</div>
-            <div class="event-desc">Drive the spectacular cliff road from Valldemossa to Deia — one of the best drives in Europe. A tiny hilltop village of golden stone houses draped in bougainvillea, surrounded by olive groves and mountains plunging to the sea. Climb to the church for panoramic views.<br>Cala Deia — a hidden pebble beach — is a 10-min walk downhill for a quick swim. Allow 1 hour.<br><span class="price">Free · 15 min from Valldemossa</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">1:30 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🥘</span>Lunch — Ca'n Costa (Valldemossa Road)</div>
-            <div class="event-desc">Perfectly placed between Deia and Valldemossa. Best authentic Mallorcan food on the island — Arroz Brut (aromatic spiced rice), slow-cooked meats, huge portions and the best red sangria you'll ever taste.<br>Ca'n Costa serves lunch Mon–Sat 1–4 PM. Day 2 lunch is the ideal visit.<br><span class="price">~€35–45/person · Call +34 971 612 263 to reserve for 8</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">3:30 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🚗</span>Scenic Drive South — MA-10 Coast Road</div>
-            <div class="event-desc">One of Europe's great drives — the MA-10 winds along the Tramuntana coast past Sa Foradada rock arch, Banyalbufar terraces and the Port d'Andratx marina.<br><span class="price">Stop at Sa Foradada viewpoint (15 mins) — rock arch jutting into the sea · ~1 hr to Port d'Andratx</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">7:00 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🌊</span>Dinner — Beach Club Gran Folies, Port d'Andratx</div>
-            <div class="event-desc">One of Mallorca's most glamorous beach club restaurants, perched on the rocks above the sea. Spectacular cliffside views, Balearic island vibes. The seafood paella is the standout. Sunset from this terrace is extraordinary.<br>Book a restaurant table (not just daybeds). Ask for a sea-view spot. Consider a taxi back so everyone can drink freely.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · granfolies.com · +34 971 671 094 · ~€55–75/person</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DAY 3 -->
-    <div class="day-block open">
-      <div class="day-title" onclick="toggleDay(this)">
-        <span class="day-badge">Tue May 20</span>
-        <span class="day-label">Soller Boat Charter · Palma Last Night <span class="group-tag">Group of 8</span></span>
-        <span class="chevron">▼</span>
-      </div>
-      <div class="events">
-        <div class="event">
-          <div class="event-time">8:00 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
-            <div class="event-desc">Early start — big day. Fuel up at the hotel buffet then drive north to Port de Soller. Allow 1 hour for the mountain drive. Leave by 8:45 AM.<br><span class="price">Take the old Coll de Soller mountain road for spectacular views (adds 20 mins)</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">10:00 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🚃</span>Soller Town — Vintage Tram to Port (Optional)</div>
-            <div class="event-desc">Park in Soller and ride the legendary 1913 wooden tram down through orange and lemon groves to Port de Soller — 20 minutes of pure nostalgia.<br><span class="price">~€8/person each way · trendesoller.com · First departure ~10:10 AM from Plaza de España</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">11:00 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">⛵</span>Boat Charter — Port de Soller</div>
-            <div class="event-desc">Set sail along the dramatic Tramuntana coastline — the most spectacular stretch of sea in Mallorca. Hidden turquoise coves, sea caves, sheer cliffs. Swim at Cala Tuent, explore the secret cave at Cala Deia, anchor at Sa Foradada.<br>BBQ lunch on board: fresh fish, grilled meats, salads. Drinks included: sangria, Mallorcan white wine, cold beers. Water toys: paddleboards, snorkelling gear, kayaks. 4–5 hours.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · ~€80–120/person · Request BBQ food + drinks package for 8</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time"></div>
-          <div class="event-content">
-            <div class="event-name" style="font-size:0.78rem;color:var(--warm-gray);font-family:'DM Sans'">⛵ Boat Operators — message all three, take first available:</div>
-            <div class="event-desc">
-              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sail La Vie (Xico)</strong> &nbsp;<a href="https://saillavie.com" target="_blank" style="color:var(--gold);text-decoration:none">saillavie.com</a> · +34 611 708 226</div>
-              <div style="margin:4px 0;"><strong style="color:var(--cream)">Bonnie Lass Charters (Pete)</strong> · +34 654 234 897</div>
-              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sails Up Mallorca (Alvaro)</strong> · +34 646 099 885</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">4:30 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍦</span>Back in Port de Soller — Explore & Relax</div>
-            <div class="event-desc">Stroll the horseshoe harbour, grab an ice cream or coffee. Pick up a bottle of Mallorcan Hierbas liqueur or the island's famous orange liqueur as a souvenir. Then drive south for dinner.</div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">7:30 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍷</span>Dinner — Fervor Palma</div>
-            <div class="event-desc">Carrer de Can Verí 4, Palma Old Town &nbsp;<span class="stars">⭐ 4.5</span>&nbsp; · A buzzing, design-forward restaurant in the heart of Palma's old town. Open Tuesdays and great for groups — modern Spanish cuisine, excellent charcoal-grilled meats and creative tapas. Lively atmosphere that flows perfectly into a late-night Palma cocktail bar crawl.<br><span class="price">~€35–50/person · Book ahead · <a href="https://grupocardon.com/restaurantes/fervor" target="_blank" style="color:var(--gold);text-decoration:none">grupocardon.com/restaurantes/fervor</a></span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">10:00 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍸</span>Last Night Out — Palma Old Town</div>
-            <div class="event-desc"><strong style="color:var(--cream)">After Landing Cocktail Art</strong> — 5 stars, free welcome shot, open until 1 AM<br><strong style="color:var(--cream)">Chapeau Palma</strong> — Top-500 worldwide, open until 2 AM<br>Both in the old town, walking distance from each other.<br><span class="price">~€12/cocktail · Walk-in friendly</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DAY 4 -->
-    <div class="day-block open">
-      <div class="day-title" onclick="toggleDay(this)">
-        <span class="day-badge">Wed May 21</span>
-        <span class="day-label">La Seu Cathedral · Fly Home ✈️ <span class="group-tag">Group of 8</span></span>
-        <span class="chevron">▼</span>
-      </div>
-      <div class="events">
-        <div class="event">
-          <div class="event-time">8:00 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🍳</span>Final Breakfast — Zel Mallorca</div>
-            <div class="event-desc">One last time at the best hotel breakfast buffet in Spain. Savour it. Check-out is 11 AM — check out by 10:00 AM and store luggage at reception while you head to the cathedral.<br><span class="price">Ask to store bags until you collect them on the way to the airport</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">10:15 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🕌</span>La Seu Cathedral, Palma</div>
-            <div class="event-desc">Palma's breathtaking Gothic cathedral right on the seafront. One of the finest in Europe. Gaudí-redesigned interiors with enormous rose windows casting coloured light across the nave. Allow 45–50 minutes. Then walk the waterfront Paseo Marítimo for one last look at the Bay of Palma.<br><span class="price">€9 entry · Book tickets in advance at catedraldemallorca.org · Dress modestly</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">11:45 AM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">🚗</span>Drive to Palma Airport (PMI)</div>
-            <div class="event-desc">Collect luggage from Zel Mallorca on the way, then head to PMI. Return rental cars at the airport. Allow 90 mins minimum before departure.<br><span class="price">~20 min from Palma · Leave by 11:45 AM at the latest</span></div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-time">2:20 PM</div>
-          <div class="event-content">
-            <div class="event-name"><span class="event-icon">✈️</span>Flight Departs — 14:20 · Adios Mallorca</div>
-            <div class="event-desc">Wheels up. Three days of sun, sea, mountains, food, wine and memories. Mallorca has a way of pulling people back. Until next time.<br><span class="price">Duty-free pick: Mallorcan Hierbas liqueur or island gin — the best island souvenirs</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mallorca Booking Checklist (inline tip) -->
-    <div class="tip-banner">
-      🗓️ <strong>Mallorca 2026 — Book immediately:</strong> Restaurant Illeta (+34 637 077 870, no walk-ins) · Soller Boat Charter (WhatsApp all 3 operators) · Gran Folies (granfolies.com) · Valldemossa Monastery (cartuxa.es) · La Seu Cathedral (catedraldemallorca.org) · 2–3 rental cars · Airport transfer May 18 ~5:15 PM
-    </div>
-
-  </div>
-</section>
-
 <!-- ════════════════ CHECKLIST ════════════════ -->
 <section id="rsvp">
   <h2>🙋 Who's Coming?</h2>
@@ -2270,7 +2139,7 @@
     <input class="rsvp-input" id="rsvp-name-input" type="text" placeholder="Enter your name…" maxlength="24" />
     <button class="rsvp-btn" onclick="rsvpAdd()">Add Me</button>
   </div>
-  <div id="rsvp-status" style="display:none;text-align:center;font-size:0.78rem;margin-bottom:12px;transition:all 0.3s;"></div>
+  <div id="rsvp-status" style="display:none;text-align:center;font-size:0.78rem;margin-bottom:12px;"></div>
 
   <div class="rsvp-legs">
     <div class="rsvp-leg-card">
@@ -2320,9 +2189,9 @@
   <div class="map-filters">
     <button class="map-filter-btn all active" onclick="filterMap('all',this)">All</button>
     <button class="map-filter-btn bcn-f" onclick="filterMap('bcn',this)">📍 Barcelona</button>
+    <button class="map-filter-btn mal-f" onclick="filterMap('mal',this)">🌿 Mallorca</button>
     <button class="map-filter-btn ibz-f" onclick="filterMap('ibz',this)">🎉 Ibiza</button>
     <button class="map-filter-btn fin-f" onclick="filterMap('fin',this)">🎤 Finale</button>
-    <button class="map-filter-btn mal-f" onclick="filterMap('mal',this)">🌿 Mallorca</button>
   </div>
 
   <div class="map-container">
@@ -2780,60 +2649,25 @@
 <section id="suggestions">
   <h2>💬 Suggest a Change</h2>
   <p class="suggestions-sub">Got a better restaurant idea? Want to swap an activity?<br>Submit your suggestion and it goes straight to the trip organiser.</p>
-
   <div class="suggestions-layout">
-
     <div class="suggestions-info">
-      <div class="suggestion-step">
-        <div class="suggestion-step-num">1</div>
-        <div class="suggestion-step-text"><strong>Pick a leg</strong> — let us know if your suggestion is for Barcelona, Ibiza, the Finale, or Mallorca.</div>
-      </div>
-      <div class="suggestion-step">
-        <div class="suggestion-step-num">2</div>
-        <div class="suggestion-step-text"><strong>Describe your idea</strong> — a restaurant swap, a different beach club, an activity, anything. The more detail the better.</div>
-      </div>
-      <div class="suggestion-step">
-        <div class="suggestion-step-num">3</div>
-        <div class="suggestion-step-text"><strong>Rate the priority</strong> — nice to have, important, or must change. Helps the organiser triage quickly.</div>
-      </div>
-      <div class="suggestion-step">
-        <div class="suggestion-step-num">4</div>
-        <div class="suggestion-step-text"><strong>Hit submit</strong> — your suggestion lands in a shared Google Sheet. The organiser reviews all suggestions and updates the itinerary here.</div>
-      </div>
-      <div style="padding:14px 16px;background:rgba(30,140,106,0.06);border:1px solid rgba(30,140,106,0.2);border-radius:10px;font-size:0.78rem;color:#5FD4A8;line-height:1.6;">
-        ✅ <strong>All suggestions are reviewed.</strong> If your idea makes the cut, the itinerary gets updated and re-published — everyone on the link sees the change automatically.
-      </div>
+      <div class="suggestion-step"><div class="suggestion-step-num">1</div><div class="suggestion-step-text"><strong>Pick a leg</strong> — Barcelona, Mallorca, Ibiza, or Finale.</div></div>
+      <div class="suggestion-step"><div class="suggestion-step-num">2</div><div class="suggestion-step-text"><strong>Describe your idea</strong> — restaurant swap, activity, timing change. More detail the better.</div></div>
+      <div class="suggestion-step"><div class="suggestion-step-num">3</div><div class="suggestion-step-text"><strong>Rate the priority</strong> — nice to have, important, or must change.</div></div>
+      <div class="suggestion-step"><div class="suggestion-step-num">4</div><div class="suggestion-step-text"><strong>Hit submit</strong> — lands in a Google Sheet. Organiser reviews and updates the itinerary here.</div></div>
+      <div style="padding:14px 16px;background:rgba(30,140,106,0.06);border:1px solid rgba(30,140,106,0.2);border-radius:10px;font-size:0.78rem;color:#5FD4A8;line-height:1.6;">✅ <strong>All suggestions reviewed.</strong> Good ones get built into the itinerary and pushed live automatically.</div>
     </div>
-
     <div class="suggestions-form-panel">
-      <div class="suggestions-form-header">
-        <span style="font-size:1.2rem;">📝</span>
-        <span class="suggestions-form-title">Trip Suggestion Form</span>
-        <span class="suggestions-form-badge">Live</span>
-      </div>
+      <div class="suggestions-form-header"><span style="font-size:1.2rem">📝</span><span class="suggestions-form-title">Trip Suggestion Form</span><span class="suggestions-form-badge">Live</span></div>
       <div class="suggestions-form-body">
-        <a class="suggest-open-btn"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?usp=header"
-           target="_blank">
-          <span>📝</span> Open Suggestion Form
-        </a>
-        <button class="suggest-inline-toggle" onclick="toggleInlineForm(this)">
-          ↕ Or fill it in right here
-        </button>
+        <a class="suggest-open-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?usp=header" target="_blank"><span>📝</span> Open Suggestion Form</a>
+        <button class="suggest-inline-toggle" onclick="toggleInlineForm(this)">↕ Or fill it in right here</button>
         <div class="suggest-iframe-wrapper" id="suggest-iframe-wrapper">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?embedded=true"
-            title="Trip Suggestion Form">
-            Loading form…
-          </iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?embedded=true" title="Trip Suggestion Form">Loading…</iframe>
         </div>
-        <p class="suggestions-note">
-          Responses are collected by the trip organiser via Google Sheets.<br>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?usp=header" target="_blank">Open in full screen →</a>
-        </p>
+        <p class="suggestions-note">Responses collected via Google Sheets.<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSexd_prqG9XHv5dCJlfYTOANt4DqdEc_tJXCtg7V20zpwdBlw/viewform?usp=header" target="_blank">Open in full screen →</a></p>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -2841,7 +2675,7 @@
 <footer>
   <span class="footer-flag">🇪🇸</span>
   <p class="footer-tagline">¡Que lo paséis genial!</p>
-  <p>Spain &amp; Mallorca 2026 · Barcelona · Ibiza · Barcelona </p>
+  <p>Spain &amp; Mallorca 2026 · Barcelona · Mallorca · Ibiza · Barcelona</p>
 </footer>
 
 <script>
@@ -2946,29 +2780,20 @@
   // ─── RSVP — Google Sheets backend ───
   const RSVP_API = 'https://script.google.com/macros/s/AKfycbzhxDmmDcXvb_e6wiH7bc915a1TQS3eSpBuRLFT0RRLlI2ebufMLG_uPo3Gua9WMhxZ/exec';
   const AVATAR_COLORS = ['#D4385A','#2E86AB','#7B5EA7','#C9A84C','#4CAF50','#FF6B6B','#45B7D1','#96CEB4'];
-
-  // Local cache so the UI stays snappy
-  let rsvpCache = { bcn1:[], ibz:[], fin:[], mal:[] };
+  let rsvpCache = { bcn1:[], mal:[], ibz:[], fin:[] };
 
   function renderRsvp() {
-    ['bcn1','ibz','fin','mal'].forEach(leg => {
+    ['bcn1','mal','ibz','fin'].forEach(leg => {
       const container = document.getElementById('people-' + leg);
       const countEl   = document.getElementById('count-' + leg);
       if (!container || !countEl) return;
       const people = rsvpCache[leg] || [];
       countEl.textContent = people.length + ' going';
-      if (people.length === 0) {
-        container.innerHTML = '<span class="rsvp-empty">No one added yet</span>';
-        return;
-      }
+      if (people.length === 0) { container.innerHTML = '<span class="rsvp-empty">No one added yet</span>'; return; }
       container.innerHTML = people.map((name, i) => {
-        const color    = AVATAR_COLORS[i % AVATAR_COLORS.length];
+        const color = AVATAR_COLORS[i % AVATAR_COLORS.length];
         const initials = name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
-        return `<div class="rsvp-person">
-          <div class="rsvp-avatar" style="background:${color}">${initials}</div>
-          ${name}
-          <span class="rsvp-remove" onclick="rsvpRemove('${leg}','${name.replace(/'/g,"\\'")}')">✕</span>
-        </div>`;
+        return `<div class="rsvp-person"><div class="rsvp-avatar" style="background:${color}">${initials}</div>${name}<span class="rsvp-remove" onclick="rsvpRemove('${leg}','${name.replace(/'/g,"\\'")}')">✕</span></div>`;
       }).join('');
     });
   }
@@ -2976,89 +2801,52 @@
   function setRsvpStatus(msg, color) {
     const el = document.getElementById('rsvp-status');
     if (!el) return;
-    el.textContent = msg;
-    el.style.color = color || 'var(--warm-gray)';
-    el.style.display = msg ? 'block' : 'none';
+    el.textContent = msg; el.style.color = color || 'var(--warm-gray)'; el.style.display = msg ? 'block' : 'none';
   }
 
   async function fetchRsvps() {
     setRsvpStatus('Loading…', 'var(--warm-gray)');
     try {
-      const res  = await fetch(RSVP_API);
+      const res = await fetch(RSVP_API);
       const json = await res.json();
-      if (json.ok) {
-        rsvpCache = Object.assign({ bcn1:[], ibz:[], fin:[], mal:[] }, json.rsvps);
-        renderRsvp();
-        setRsvpStatus('');
-      } else {
-        setRsvpStatus('Could not load RSVPs.', '#F0889A');
-      }
-    } catch {
-      setRsvpStatus('Offline — showing cached data.', 'var(--warm-gray)');
-      renderRsvp();
-    }
+      if (json.ok) { rsvpCache = Object.assign({ bcn1:[], mal:[], ibz:[], fin:[] }, json.rsvps); renderRsvp(); setRsvpStatus(''); }
+      else { setRsvpStatus('Could not load RSVPs.', '#F0889A'); }
+    } catch { setRsvpStatus('Offline — showing cached data.', 'var(--warm-gray)'); renderRsvp(); }
   }
 
   async function postRsvp(name, leg, action) {
-    try {
-      await fetch(RSVP_API, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, leg, action })
-      });
-    } catch {
-      // no-cors means we can't read the response — that's fine, write still goes through
-    }
+    try { await fetch(RSVP_API, { method:'POST', mode:'no-cors', headers:{'Content-Type':'application/json'}, body:JSON.stringify({name,leg,action}) }); } catch {}
   }
 
   async function rsvpAdd() {
     const input = document.getElementById('rsvp-name-input');
-    const name  = input.value.trim();
+    const name = input.value.trim();
     if (!name) return;
-
-    const legs     = ['bcn1','ibz','fin','mal'];
-    const legNames = ['Barcelona (May 17–18)','Ibiza (May 21–23)','Barcelona Finale (May 23–25)','Mallorca (May 18–21)'];
-    const chosen   = [];
-    for (let i = 0; i < legs.length; i++) {
-      if (confirm(`Is ${name} joining: ${legNames[i]}?`)) chosen.push(legs[i]);
-    }
+    const legs = ['bcn1','mal','ibz','fin'];
+    const legNames = ['Barcelona (May 17–18)','Mallorca (May 18–21)','Ibiza (May 21–23)','Barcelona Finale (May 23–25)'];
+    const chosen = [];
+    for (let i = 0; i < legs.length; i++) { if (confirm(`Is ${name} joining: ${legNames[i]}?`)) chosen.push(legs[i]); }
     if (chosen.length === 0) return;
-
-    // Optimistic update — show immediately
-    chosen.forEach(leg => {
-      if (!rsvpCache[leg].includes(name)) rsvpCache[leg].push(name);
-    });
-    renderRsvp();
-    input.value = '';
-    input.focus();
+    chosen.forEach(leg => { if (!rsvpCache[leg].includes(name)) rsvpCache[leg].push(name); });
+    renderRsvp(); input.value = ''; input.focus();
     setRsvpStatus('Saving…', 'var(--warm-gray)');
-
-    // Write each leg to Sheets
     await Promise.all(chosen.map(leg => postRsvp(name, leg, 'add')));
     setRsvpStatus('✓ Saved to shared list!', '#4CAF50');
     setTimeout(() => setRsvpStatus(''), 3000);
   }
 
   async function rsvpRemove(leg, name) {
-    // Optimistic update
     rsvpCache[leg] = rsvpCache[leg].filter(n => n !== name);
-    renderRsvp();
-    setRsvpStatus('Removing…', 'var(--warm-gray)');
+    renderRsvp(); setRsvpStatus('Removing…', 'var(--warm-gray)');
     await postRsvp(name, leg, 'remove');
-    setRsvpStatus('✓ Removed.', '#4CAF50');
-    setTimeout(() => setRsvpStatus(''), 2000);
+    setRsvpStatus('✓ Removed.', '#4CAF50'); setTimeout(() => setRsvpStatus(''), 2000);
   }
 
-  document.getElementById('rsvp-name-input').addEventListener('keydown', e => {
-    if (e.key === 'Enter') rsvpAdd();
-  });
-
-  // Load live data on page open
+  document.getElementById('rsvp-name-input').addEventListener('keydown', e => { if (e.key === 'Enter') rsvpAdd(); });
   fetchRsvps();
-
-  // Refresh every 30 seconds so new RSVPs from others appear automatically
   setInterval(fetchRsvps, 30000);
+
+  renderRsvp();
 
   // ─── MAP FILTER ───
   // ─── CUSTOM SVG MAP ───
@@ -3071,7 +2859,7 @@
     { leg:'bcn', name:'Sagrada Família',    type:'⛪ Attraction · BCN',      lat:41.404, lon:2.174,  color:'#D4385A', query:'Sagrada Familia Barcelona' },
     // Ibiza leg
     { leg:'ibz', name:'Blue Marlin',        type:'🏖️ Beach Club · May 21',  lat:38.872, lon:1.397,  color:'#2E86AB', query:'Blue Marlin Ibiza Cala Jondal' },
-    { leg:'ibz', name:'Zazú Beach Club',    type:'🏖️ Beach Club · May 22',  lat:38.883, lon:1.410,  color:'#2E86AB', query:'Zazu Ibiza Beach Club' },
+    { leg:'ibz', name:'Zazú Beach Club',    type:'🏖️ Beach Club · May 22',  lat:38.883, lon:1.410,  color:'#2E86AB', query:'Blue Marlin Ibiza Cala Jondal' },
     { leg:'ibz', name:'Ushuaïa',            type:'🎉 Superclub · Ibiza',     lat:38.879, lon:1.413,  color:'#2E86AB', query:'Ushuaia Ibiza Beach Hotel' },
     { leg:'ibz', name:'El Chiringuito',     type:'🦞 Dinner · May 22',       lat:38.870, lon:1.406,  color:'#2E86AB', query:'El Chiringuito Es Cavallet Ibiza' },
     { leg:'ibz', name:'Pacha',              type:'🎵 Club · Ibiza',          lat:38.908, lon:1.440,  color:'#2E86AB', query:'Pacha Ibiza' },
@@ -3265,12 +3053,11 @@
     el.classList.add('copied');
     setTimeout(() => el.classList.remove('copied'), 1500);
   }
-  // ─── SUGGESTIONS inline form toggle ───
+
   function toggleInlineForm(btn) {
     const wrapper = document.getElementById('suggest-iframe-wrapper');
-    const isOpen = wrapper.classList.contains('open');
     wrapper.classList.toggle('open');
-    btn.textContent = isOpen ? '↕ Or fill it in right here' : '↑ Hide inline form';
+    btn.textContent = wrapper.classList.contains('open') ? '↑ Hide inline form' : '↕ Or fill it in right here';
   }
 
 </script>
