@@ -1,0 +1,3003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇪🇸 Spain Group Trip · May 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8D08A;
+    --cream: #FAF7F0;
+    --dark: #1A1410;
+    --charcoal: #2C2420;
+    --warm-gray: #8A7F78;
+    --barcelona: #D4385A;
+    --ibiza: #2E86AB;
+    --finale: #7B5EA7;
+    --mallorca: #1E8C6A;
+    --section-pad: clamp(40px, 6vw, 80px);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--dark);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 30% 40%, #3D1F0D 0%, #1A1410 50%),
+                radial-gradient(ellipse at 70% 60%, #0D1F3D 0%, transparent 60%);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(201,168,76,0.12) 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, rgba(46,134,171,0.08) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .hero-ornament {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 9vw, 8rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #FAF7F0 30%, var(--gold-light) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: var(--gold);
+    margin-bottom: 32px;
+  }
+
+  .hero-dates {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    margin-bottom: 48px;
+  }
+
+  .leg-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .pill {
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid;
+  }
+  .pill-bcn { background: rgba(212,56,90,0.15); border-color: rgba(212,56,90,0.5); color: #F0889A; }
+  .pill-ibz { background: rgba(46,134,171,0.15); border-color: rgba(46,134,171,0.5); color: #7EC8E3; }
+  .pill-fin { background: rgba(123,94,167,0.15); border-color: rgba(123,94,167,0.5); color: #C4A9E8; }
+
+  .vibes {
+    margin-top: 32px;
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(26,20,16,0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+
+  nav a {
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    transition: color 0.2s;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { color: var(--cream); }
+  nav a.bcn-link:hover, nav a.bcn-link:focus { color: #F0889A; border-color: #F0889A; }
+  nav a.ibz-link:hover, nav a.ibz-link:focus { color: #7EC8E3; border-color: #7EC8E3; }
+  nav a.fin-link:hover, nav a.fin-link:focus { color: #C4A9E8; border-color: #C4A9E8; }
+  nav a.list-link:hover { color: var(--gold); border-color: var(--gold); }
+
+  /* ─── LEG HEADER ─── */
+  .leg-header {
+    padding: 60px 20px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .leg-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 60px; height: 2px;
+    background: currentColor;
+    opacity: 0.4;
+  }
+
+  .leg-header.bcn { --accent: var(--barcelona); }
+  .leg-header.ibz { --accent: var(--ibiza); }
+  .leg-header.fin { --accent: var(--finale); }
+  .leg-header::after { background: var(--accent); opacity: 0.6; width: 80px; }
+
+  .leg-number {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .leg-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--cream);
+    margin-bottom: 8px;
+  }
+
+  .leg-header h2 span {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .leg-meta {
+    font-size: 0.85rem;
+    color: var(--warm-gray);
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+  }
+
+  /* ─── DAY BLOCKS ─── */
+  .leg-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+
+  .day-block {
+    margin-bottom: 40px;
+  }
+
+  .day-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .day-badge {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .bcn .day-badge { background: rgba(212,56,90,0.2); color: #F0889A; }
+  .ibz .day-badge { background: rgba(46,134,171,0.2); color: #7EC8E3; }
+  .fin .day-badge { background: rgba(123,94,167,0.2); color: #C4A9E8; }
+
+  .day-label {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    color: var(--cream);
+    flex: 1;
+  }
+
+  .day-label .group-tag {
+    font-size: 0.7rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: var(--warm-gray);
+    font-style: normal;
+    margin-left: 8px;
+  }
+
+  .chevron {
+    color: var(--warm-gray);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+  }
+  .day-block.open .chevron { transform: rotate(180deg); }
+
+  .events {
+    display: none;
+    padding-top: 8px;
+  }
+  .day-block.open .events { display: block; }
+
+  /* ─── EVENT CARD ─── */
+  .event {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    animation: slideIn 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .event:last-child { border-bottom: none; }
+
+  .event-time {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--warm-gray);
+    padding-top: 3px;
+    line-height: 1.4;
+    text-align: right;
+  }
+
+  .event-content {}
+
+  .event-icon { font-size: 1rem; margin-right: 6px; }
+
+  .event-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+
+  .event-desc {
+    font-size: 0.82rem;
+    color: #A09288;
+    line-height: 1.6;
+  }
+
+  .event-desc .stars {
+    color: var(--gold);
+    font-size: 0.7rem;
+  }
+
+  .event-desc .price {
+    display: inline-block;
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 3px;
+    padding: 1px 7px;
+    font-size: 0.7rem;
+    color: var(--gold-light);
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  /* ─── TIP BANNERS ─── */
+  .tip-banner {
+    margin: 20px 0;
+    padding: 14px 18px;
+    background: rgba(201,168,76,0.06);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.82rem;
+    color: #B8A882;
+    line-height: 1.6;
+  }
+
+  /* ─── CHECKLIST ─── */
+  #checklist {
+    padding: var(--section-pad) 20px;
+    background: rgba(201,168,76,0.03);
+    border-top: 1px solid rgba(201,168,76,0.1);
+  }
+
+  #checklist h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--cream);
+  }
+
+  #checklist .sub {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.85rem;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+  }
+
+  .checklist-grid {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    user-select: none;
+  }
+  .check-item:hover { background: rgba(255,255,255,0.05); }
+  .check-item.checked {
+    background: rgba(100,200,100,0.05);
+    border-color: rgba(100,200,100,0.2);
+    opacity: 0.65;
+  }
+
+  .check-box {
+    width: 20px; height: 20px;
+    border: 2px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-top: 1px;
+  }
+  .check-item.checked .check-box {
+    background: #4CAF50;
+    border-color: #4CAF50;
+  }
+  .check-box::after {
+    content: '';
+    display: none;
+    width: 5px; height: 9px;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .check-item.checked .check-box::after { display: block; }
+
+  .check-text { flex: 1; }
+  .check-name {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--cream);
+    margin-bottom: 2px;
+  }
+  .check-where {
+    font-size: 0.77rem;
+    color: var(--warm-gray);
+  }
+  .check-where a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+  }
+  .check-where a:hover { border-color: var(--gold); }
+
+  .check-urgent {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F0889A;
+    background: rgba(212,56,90,0.15);
+    border: 1px solid rgba(212,56,90,0.3);
+    padding: 2px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-top: 1px;
+  }
+
+  .checklist-progress {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+  }
+
+  .progress-bar {
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 2px;
+    max-width: 300px;
+    margin: 10px auto 0;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    border-radius: 2px;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+
+  /* ─── BUDGET ─── */
+  #budget {
+    padding: var(--section-pad) 20px;
+  }
+
+  #budget h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .budget-note {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.82rem;
+    margin-bottom: 36px;
+  }
+
+  .budget-cards {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .budget-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .budget-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .budget-card.bcn::before { background: var(--barcelona); }
+  .budget-card.ibz::before { background: var(--ibiza); }
+  .budget-card.fin::before { background: var(--finale); }
+
+  .budget-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: var(--cream);
+  }
+
+  .budget-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.82rem;
+  }
+  .budget-line:last-of-type { border-bottom: none; }
+  .budget-line .cat { color: var(--warm-gray); }
+  .budget-line .amt { font-weight: 500; color: var(--cream); }
+
+  .budget-total {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .budget-total .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+  .budget-total .total-amt {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-flag { font-size: 3rem; display: block; margin-bottom: 16px; }
+  .footer-tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  footer p {
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 600px) {
+    .event {
+      grid-template-columns: 70px 1fr;
+      gap: 0 12px;
+    }
+    .event-time { font-size: 0.65rem; }
+    nav a { padding: 12px 12px; font-size: 0.72rem; }
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .leg-header.mal { --accent: var(--mallorca); }
+  .mal .day-badge { background: rgba(30,140,106,0.2); color: #5FD4A8; }
+  .pill-mal { background: rgba(30,140,106,0.15); border-color: rgba(30,140,106,0.5); color: #5FD4A8; }
+  nav a.mal-link:hover, nav a.mal-link:focus { color: #5FD4A8; border-color: #5FD4A8; }
+  .map-filter-btn.mal-f.active { background: var(--mallorca); border-color: var(--mallorca); color: white; }
+  .countdown-bar {
+    background: linear-gradient(135deg, #1e1208 0%, #0d1a2e 100%);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .countdown-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+  .countdown-units {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 6px;
+    padding: 4px 10px;
+    min-width: 44px;
+  }
+  .countdown-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .countdown-unit-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 2px;
+  }
+  .countdown-sep { color: var(--gold); font-size: 0.8rem; opacity: 0.4; }
+  .countdown-gone {
+    color: #4CAF50;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── RSVP ─── */
+  #rsvp {
+    padding: var(--section-pad) 20px;
+    background: rgba(255,255,255,0.01);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  #rsvp h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--cream);
+  }
+  .rsvp-sub {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.82rem;
+    margin-bottom: 36px;
+  }
+  .rsvp-add {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    display: flex;
+    gap: 10px;
+  }
+  .rsvp-input {
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .rsvp-input:focus { border-color: rgba(201,168,76,0.5); }
+  .rsvp-input::placeholder { color: var(--warm-gray); }
+  .rsvp-btn {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .rsvp-btn:hover { background: var(--gold-light); }
+  .rsvp-legs {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .rsvp-leg-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .rsvp-leg-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .rsvp-leg-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--cream);
+  }
+  .rsvp-count {
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--warm-gray);
+    font-weight: 500;
+  }
+  .rsvp-people {
+    padding: 12px 18px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-content: flex-start;
+  }
+  .rsvp-person {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 4px 10px 4px 6px;
+    font-size: 0.78rem;
+    color: var(--cream);
+    animation: popIn 0.2s ease;
+  }
+  @keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .rsvp-avatar {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--dark);
+    flex-shrink: 0;
+  }
+  .rsvp-remove {
+    cursor: pointer;
+    color: var(--warm-gray);
+    font-size: 0.7rem;
+    margin-left: 2px;
+    line-height: 1;
+    padding: 1px 3px;
+    border-radius: 3px;
+    transition: color 0.2s;
+  }
+  .rsvp-remove:hover { color: #F0889A; }
+  .rsvp-empty {
+    font-size: 0.78rem;
+    color: rgba(138,127,120,0.5);
+    font-style: italic;
+    padding: 4px 0;
+  }
+  .leg-color-bcn { background: #D4385A; }
+  .leg-color-ibz { background: #2E86AB; }
+  .leg-color-fin { background: #7B5EA7; }
+
+  /* ─── MAP ─── */
+  #map-section {
+    padding: var(--section-pad) 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  #map-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--cream);
+  }
+  .map-sub {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.82rem;
+    margin-bottom: 24px;
+  }
+  .map-filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .map-filter-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: transparent;
+    color: var(--warm-gray);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .map-filter-btn.active { color: var(--dark); font-weight: 600; }
+  .map-filter-btn.all.active { background: var(--gold); border-color: var(--gold); }
+  .map-filter-btn.bcn-f.active { background: var(--barcelona); border-color: var(--barcelona); color: white; }
+  .map-filter-btn.ibz-f.active { background: var(--ibiza); border-color: var(--ibiza); color: white; }
+  .map-filter-btn.fin-f.active { background: var(--finale); border-color: var(--finale); color: white; }
+  .map-container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .map-embed {
+    width: 100%;
+    height: 420px;
+    border: none;
+    display: block;
+  }
+  .map-venue-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .map-venue {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .map-venue:hover { background: rgba(255,255,255,0.07); }
+  .map-venue.hidden { display: none; }
+  .map-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .map-venue-name { color: var(--cream); font-weight: 500; flex: 1; }
+  .map-venue-type { color: var(--warm-gray); font-size: 0.72rem; }
+
+  /* ─── TOOLS GRID (Currency + Packing + Emergency) ─── */
+  #tools {
+    padding: var(--section-pad) 20px;
+    background: rgba(201,168,76,0.02);
+    border-top: 1px solid rgba(201,168,76,0.08);
+  }
+  #tools h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--cream);
+  }
+  .tools-sub {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.82rem;
+    margin-bottom: 36px;
+  }
+  .tools-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+
+  /* Currency converter */
+  .tool-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .tool-card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tool-card-icon { font-size: 1.3rem; }
+  .tool-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+  }
+  .tool-card-body { padding: 18px 20px; }
+
+  .currency-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .currency-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    width: 32px;
+    flex-shrink: 0;
+  }
+  .currency-input {
+    flex: 1;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--cream);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .currency-input:focus { border-color: rgba(201,168,76,0.5); }
+  .currency-swap {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0 12px;
+  }
+  .swap-btn {
+    background: rgba(201,168,76,0.1);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 6px;
+    padding: 5px 12px;
+    color: var(--gold);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+  }
+  .swap-btn:hover { background: rgba(201,168,76,0.2); }
+  .currency-rate {
+    font-size: 0.72rem;
+    color: var(--warm-gray);
+    text-align: center;
+    margin-top: 8px;
+  }
+  .currency-quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+  .quick-btn {
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    color: var(--warm-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .quick-btn:hover { background: rgba(201,168,76,0.1); color: var(--gold); border-color: rgba(201,168,76,0.3); }
+
+  /* Packing list */
+  .pack-category { margin-bottom: 14px; }
+  .pack-cat-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .pack-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 0.82rem;
+    color: #C0B5AC;
+    transition: color 0.15s;
+    user-select: none;
+  }
+  .pack-item:hover { color: var(--cream); }
+  .pack-cb {
+    width: 15px; height: 15px;
+    border: 1.5px solid rgba(201,168,76,0.3);
+    border-radius: 3px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+  .pack-item.packed .pack-cb {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .pack-item.packed .pack-cb::after {
+    content: '✓';
+    font-size: 0.6rem;
+    color: var(--dark);
+    font-weight: 700;
+  }
+  .pack-item.packed span { text-decoration: line-through; opacity: 0.5; }
+  .pack-progress-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+  }
+  .pack-prog-bar {
+    flex: 1;
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .pack-prog-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  /* Emergency info */
+  .emergency-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .emergency-item:last-child { border-bottom: none; }
+  .emergency-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .emergency-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-bottom: 2px;
+  }
+  .emergency-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cream);
+  }
+  .emergency-note {
+    font-size: 0.74rem;
+    color: var(--warm-gray);
+  }
+  .emergency-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F0889A;
+  }
+
+  /* ─── PHRASES ─── */
+  #phrases {
+    padding: var(--section-pad) 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  #phrases h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--cream);
+  }
+  .phrases-sub {
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.82rem;
+    margin-bottom: 30px;
+  }
+  .phrases-grid {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  .phrase-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    position: relative;
+  }
+  .phrase-card:hover { background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+  .phrase-es {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .phrase-en {
+    font-size: 0.8rem;
+    color: var(--cream);
+    margin-bottom: 3px;
+  }
+  .phrase-phonetic {
+    font-size: 0.7rem;
+    color: var(--warm-gray);
+    letter-spacing: 0.02em;
+  }
+  .phrase-context {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ibiza);
+    margin-top: 6px;
+    opacity: 0.8;
+  }
+  .phrase-copied {
+    position: absolute;
+    top: 8px; right: 10px;
+    font-size: 0.65rem;
+    color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .phrase-card.copied .phrase-copied { opacity: 1; }
+  .phrases-categories {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .phrase-filter {
+    padding: 5px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: transparent;
+    color: var(--warm-gray);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .phrase-filter.active {
+    background: rgba(201,168,76,0.15);
+    border-color: rgba(201,168,76,0.4);
+    color: var(--gold);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-ornament">🇪🇸</div>
+  <p class="hero-eyebrow">Group Trips · 2025 & 2026</p>
+  <h1>Spain</h1>
+  <p class="hero-sub">Barcelona · Ibiza · Mallorca</p>
+  <div class="hero-dates">✈️&nbsp; May 2025 &amp; May 2026 &nbsp;·&nbsp; Two Epic Trips</div>
+  <div class="leg-pills">
+    <span class="pill pill-bcn">📍 Barcelona · May 17–18 '25 · 8 ppl</span>
+    <span class="pill pill-ibz">🎉 Ibiza · May 21–23 '25 · 8 ppl</span>
+    <span class="pill pill-fin">🎤 BCN Finale · May 23–25 '25 · 4 ppl</span>
+    <span class="pill pill-mal">🌿 Mallorca · May 18–21 '26 · 8 ppl</span>
+  </div>
+  <p class="vibes" style="margin-top:28px;">Party / Nightlife &nbsp;·&nbsp; Beach &amp; Relaxation &nbsp;·&nbsp; Mountains &amp; Sea</p>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="countdown-bar" id="countdown-bar">
+  <span class="countdown-label">Next trip departs in</span>
+  <div class="countdown-units" id="countdown-units">
+    <div class="countdown-unit"><span class="countdown-num" id="cd-days">--</span><span class="countdown-unit-label">Days</span></div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit"><span class="countdown-num" id="cd-hours">--</span><span class="countdown-unit-label">Hours</span></div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit"><span class="countdown-num" id="cd-mins">--</span><span class="countdown-unit-label">Mins</span></div>
+    <span class="countdown-sep">:</span>
+    <div class="countdown-unit"><span class="countdown-num" id="cd-secs">--</span><span class="countdown-unit-label">Secs</span></div>
+  </div>
+  <span class="countdown-label" id="countdown-trip-label">· Mallorca, May 18 2026</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#leg1" class="bcn-link">📍 BCN '25</a>
+  <a href="#leg2" class="ibz-link">🎉 Ibiza '25</a>
+  <a href="#leg3" class="fin-link">🎤 Finale '25</a>
+  <a href="#mallorca" class="mal-link">🌿 Mallorca '26</a>
+  <a href="#checklist" class="list-link">📋 Bookings</a>
+  <a href="#budget" class="list-link">💰 Budget</a>
+  <a href="#rsvp" class="list-link">🙋 RSVP</a>
+  <a href="#map-section" class="list-link">🗺️ Map</a>
+  <a href="#tools" class="list-link">🛠️ Tools</a>
+  <a href="#phrases" class="list-link">🗣️ Phrases</a>
+</nav>
+
+<!-- ════════════════ LEG 1: BARCELONA ════════════════ -->
+<section id="leg1">
+  <div class="leg-header bcn">
+    <span class="leg-number">Leg 1 · May 17–18 · Group of 8</span>
+    <h2>Barce<span>lona</span></h2>
+    <p class="leg-meta">📍 Barcelona, Spain &nbsp;·&nbsp; 2 Days</p>
+  </div>
+
+  <div class="leg-body bcn">
+
+    <!-- SAT MAY 17 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sat May 17</span>
+        <span class="day-label">Barcelona Arrival Day <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">Morning</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Arrive Barcelona El Prat Airport</div>
+            <div class="event-desc">Hire a private minivan (~€150–200 total): airport → hotel → La Roca → city. Gets everyone there stress-free.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:30 AM<br>– 3:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🛍️</span>La Roca Village Outlet</div>
+            <div class="event-desc">40 min from the city. Gucci, Prada, Loewe, Saint Laurent. Sign up for free Hands-Free Shopping membership on arrival. Open 10AM–9PM.<br><span class="price">Pre-book Hands-Free membership</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">~4:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏨</span>Check in to hotel</div>
+            <div class="event-desc">Freshen up and relax before dinner.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">8:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍽️</span>El Nacional Barcelona</div>
+            <div class="event-desc">Pg. de Gràcia 24 Bis &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · Iconic 19th-century landmark with multiple restaurant concepts under one roof. Perfect for a group of 8. ~€40–60/person.<br><span class="price">Book well in advance · elnacional.cat</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUN MAY 18 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sun May 18</span>
+        <span class="day-label">Sagrada Família → Fly to Ibiza <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">9:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">⛪</span>Sagrada Família</div>
+            <div class="event-desc">Book 9AM timed entry at sagradafamilia.org. ~2–2.5 hrs. €26–36/person. No walk-ups — must book online in advance.<br><span class="price">Book online now · sagradafamilia.org</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:30 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">☕</span>Done with Sagrada Família</div>
+            <div class="event-desc">Coffee or brunch at a nearby café.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">12:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏨</span>Return to hotel</div>
+            <div class="event-desc">Final packing and checkout.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">1:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚕</span>Leave for airport</div>
+            <div class="event-desc">Allow 45–60 min with bags.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">2:00 PM</div>
+          <div class="event-content">
+            <div class="event-name">Arrive El Prat Airport</div>
+            <div class="event-desc">Check in, security, and gate.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">3:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Depart Barcelona → Ibiza</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-banner">
+      ⚠️ <strong>Note:</strong> Flights arrive Ibiza on May 21 at 3:00 PM. May 19–20 are free days not detailed in this itinerary.
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ LEG 2: IBIZA ════════════════ -->
+<section id="leg2">
+  <div class="leg-header ibz">
+    <span class="leg-number">Leg 2 · May 21–23 · Group of 8</span>
+    <h2>I<span>biza</span></h2>
+    <p class="leg-meta">🏖️ Ibiza, Spain &nbsp;·&nbsp; 3 Days</p>
+  </div>
+
+  <div class="leg-body ibz">
+
+    <!-- WED MAY 21 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Wed May 21</span>
+        <span class="day-label">Ibiza Arrival — First Night Out <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">3:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Land at Ibiza Airport</div>
+            <div class="event-desc">Taxis or minivans to accommodation. Freshen up and rest.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">5:00 – 8:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏖️</span>Blue Marlin Ibiza</div>
+            <div class="event-desc">Cala Jondal &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · One of Ibiza's most iconic beach clubs — open daily, group-friendly, and legendary for its sunset DJ sets on Cala Jondal beach. A favourite of the celeb jet-set with a gorgeous cove setting, luxury sun beds, world-class DJs from the afternoon onwards, and a menu of fresh seafood, sushi and grilled meats. Perfect arrival-day energy — arrive at 5 PM for golden hour and the party warming up ahead of Ushuaïa.<br><span class="price">Book loungers or a table for 8 · bluemarlinibiza.com · +34 971 410 117</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:00 PM – late</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🎉</span>Ushuaïa Ibiza</div>
+            <div class="event-desc">Ctra. de Platja d'en Bossa 10 &nbsp;<span class="stars">⭐ 4.3</span>&nbsp; · Open-air poolside superclub. Legendary production. Check the May 21 lineup and pre-book tickets online. ~€50–80/person.<br><span class="price">Pre-book tickets · theushuaiaexperience.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THU MAY 22 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Thu May 22</span>
+        <span class="day-label">Full Beach Club Day + Pacha <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">12:00 – 5:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏖️</span>Zazú Ibiza Beach Club</div>
+            <div class="event-desc">Carrer del Fumarell 2 &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · Full beach club day: sun loungers, sushi, cocktails, and live entertainment. Arrive at noon to secure good spots for 8.<br><span class="price">Book ahead · zazuibiza.com</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">6:30 – 8:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🦞</span>El Chiringuito Es Cavallet</div>
+            <div class="event-desc">Playa Es Cavallet &nbsp;<span class="stars">⭐ 4.5</span>&nbsp; · One of Ibiza's most celebrated beachside restaurants — right on the sand at Es Cavallet beach. Renowned for whole grilled fish, lobster rice and fresh seafood platters. Perfect for a group of 8 before a big night — relaxed, festive atmosphere and ideal timing before Pacha. Arrive at 6:30 to catch the last of the evening light.<br><span class="price">Book ahead for 8 · ~€50–70/person · elchiringuitoescavallet.com</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:30 PM – late</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🎵</span>Pacha</div>
+            <div class="event-desc">Av. 8 d'Agost, Ibiza Town &nbsp;<span class="stars">⭐ 4.2</span>&nbsp; · The original Ibiza superclub since 1973. Bucket-list territory. Buy a drinks package online (~€50–80 entry). Doors 11PM.<br><span class="price">Buy drinks package · pacha.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRI MAY 23 IBIZA -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Fri May 23</span>
+        <span class="day-label">Farewell Morning → Fly to Barcelona <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">12:00 – 1:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🐟</span>Calma — Ibiza Marina</div>
+            <div class="event-desc">Paseo Juan Carlos I &nbsp;<span class="stars">⭐ 4.4</span>&nbsp; · Relaxed waterfront lunch with views of Dalt Vila. Excellent grilled fish, squid and local wine. Very reasonable prices.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">~2:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚕</span>Head to Ibiza Airport</div>
+            <div class="event-desc">15-minute drive. Allow extra time for group of 8.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">3:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Depart Ibiza → Barcelona</div>
+            <div class="event-desc">Group splits: 4 people continue to Barcelona for the finale.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-banner">
+      ⚠️ <strong>Ibiza transport tip:</strong> Pre-arrange minivans for late-night club runs. Ibiza taxis for 8 people need to be booked in advance — don't rely on street taxis after midnight.
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ LEG 3: BARCELONA FINALE ════════════════ -->
+<section id="leg3">
+  <div class="leg-header fin">
+    <span class="leg-number">Leg 3 · May 23–25 · Group of 4</span>
+    <h2>Barce<span>lona</span> Finale</h2>
+    <p class="leg-meta">🎤 Barcelona, Spain &nbsp;·&nbsp; Bad Bunny Night</p>
+  </div>
+
+  <div class="leg-body fin">
+
+    <!-- FRI MAY 23 FINALE -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Fri May 23</span>
+        <span class="day-label">Arrive from Ibiza — Bad Bunny Night 🎤 <span class="group-tag">Group of 4</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">4:20 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Land in Barcelona</div>
+            <div class="event-desc">Taxis to hotel. Eixample or El Born neighbourhood recommended.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">5:30 – 7:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🥩</span>La Selva Barcelona</div>
+            <div class="event-desc">Carrer de Còrsega 235 &nbsp;<span class="stars">⭐ 4.8</span>&nbsp; · Stunning steakhouse in Eixample. Exceptional meat, gorgeous jungle-themed interiors. ~€45–60/person.<br><span class="price">Book well ahead · laselvabarcelona.es</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚕</span>Uber/taxi to stadium</div>
+            <div class="event-desc">~15 min from Eixample. Allow a little extra time.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">8:00 PM – late</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🎤</span>Bad Bunny — DeBÍ TiRAR MáS FOToS World Tour</div>
+            <div class="event-desc">Estadi Olímpic Lluís Companys, Passeig Olímpic · Buy tickets at Ticketmaster.es / Livenation.es / StubHub NOW — resale ~$299+.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">URGENT — Buy tickets now</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAT MAY 24 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sat May 24</span>
+        <span class="day-label">Shopping + Gothic Quarter + Farewell Dinner <span class="group-tag">Group of 4</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">10:00 AM – 12:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🛍️</span>Passeig de Gràcia Shopping</div>
+            <div class="event-desc">Barcelona's premier shopping boulevard — Zara, Mango, Massimo Dutti alongside Chanel, Louis Vuitton, Gucci, and Bottega Veneta. Gaudí's Casa Batlló and Casa Milà exteriors are free to admire along the way.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">12:30 – 1:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍷</span>Tapeo — El Born</div>
+            <div class="event-desc">Carrer de Montcada 29 &nbsp;<span class="stars">⭐ 4.5</span>&nbsp; · Beloved tapas spot right on a charming medieval street. Standout Iberian honey ribs, oxtail, patatas bravas. ~€25–35/person.<br><span class="price">Book ahead or arrive 12:30 sharp</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">2:00 – 4:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏛️</span>Free Walking Tour — Gothic Quarter</div>
+            <div class="event-desc"><span class="stars">⭐ 5.0</span> · 12,986 reviews · Tip-based. Medieval streets, Roman ruins, incredible local history.<br><span class="price">Book 2PM slot · freewalkingtoursbarcelona.com</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">4:00 – 7:00 PM</div>
+          <div class="event-content">
+            <div class="event-name">Free time in El Born</div>
+            <div class="event-desc">Explore the neighbourhood, grab a coffee, and freshen up for dinner.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍽️</span>Arcano Restaurant Cave</div>
+            <div class="event-desc">Carrer dels Mercaders 10 &nbsp;<span class="stars">⭐ 4.6</span>&nbsp; · A 17th-century stone cave in the Gothic Quarter — right around the corner from the walking tour. Mediterranean tasting menus, exceptional Ibérico and seafood. ~€50–80/person.<br><span class="price">Book ahead · arcanobarcelona.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUN MAY 25 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sun May 25</span>
+        <span class="day-label">Final Morning — Fly Home ✈️ <span class="group-tag">Group of 4</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">9:00 – 10:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🌅</span>Barceloneta Beach</div>
+            <div class="event-desc">One final walk along the Mediterranean. Grab breakfast at a beachfront café.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:30 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚕</span>Head to Barcelona El Prat Airport</div>
+            <div class="event-desc">45–60 min with bags. Don't cut it close.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">12:50 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Depart for the US 🇺🇸</div>
+            <div class="event-desc">Safe travels — what a trip.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ BOOKING CHECKLIST ════════════════ -->
+<section id="checklist">
+  <h2>📋 Booking Checklist</h2>
+  <p class="sub">Tap to mark as done — progress saves in your browser</p>
+
+  <div class="checklist-grid">
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🎤 Bad Bunny Tickets (URGENT)</div>
+        <div class="check-where"><a href="https://ticketmaster.es" target="_blank">Ticketmaster.es</a> / <a href="https://livenation.es" target="_blank">Livenation.es</a> / StubHub · May 23 · Estadi Olímpic</div>
+      </div>
+      <span class="check-urgent">Urgent</span>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">⛪ Sagrada Família — May 18, 9AM · 8 ppl</div>
+        <div class="check-where"><a href="https://sagradafamilia.org" target="_blank">sagradafamilia.org</a> — book timed entry now, no walk-ups</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🍽️ El Nacional — May 17, 8PM · 8 ppl</div>
+        <div class="check-where"><a href="https://elnacional.cat" target="_blank">elnacional.cat</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🎉 Ushuaïa — May 21</div>
+        <div class="check-where"><a href="https://theushuaiaexperience.com" target="_blank">theushuaiaexperience.com</a> — buy tickets online</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🏖️ Blue Marlin Ibiza — May 21, 5PM · 8 ppl</div>
+        <div class="check-where"><a href="https://bluemarlinibiza.com" target="_blank">bluemarlinibiza.com</a> · +34 971 410 117 · Cala Jondal</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🏖️ Zazú Beach Club — May 22 full day · 8 ppl</div>
+        <div class="check-where"><a href="https://zazuibiza.com" target="_blank">zazuibiza.com</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🦞 El Chiringuito Es Cavallet — May 22, dinner · 8 ppl</div>
+        <div class="check-where"><a href="https://elchiringuitoescavallet.com" target="_blank">elchiringuitoescavallet.com</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🎵 Pacha — May 22</div>
+        <div class="check-where"><a href="https://pacha.com" target="_blank">pacha.com</a> — buy drinks package online</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🥩 La Selva Barcelona — May 23, ~6PM · 4 ppl</div>
+        <div class="check-where"><a href="https://laselvabarcelona.es" target="_blank">laselvabarcelona.es</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🍽️ Arcano Restaurant Cave — May 24, 7:30PM</div>
+        <div class="check-where"><a href="https://arcanobarcelona.com" target="_blank">arcanobarcelona.com</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🏛️ Free Walking Tour — May 24, 2PM</div>
+        <div class="check-where"><a href="https://freewalkingtoursbarcelona.com" target="_blank">freewalkingtoursbarcelona.com</a></div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🚐 Ibiza minivan — late-night club transport</div>
+        <div class="check-where">Book locally in advance for group of 8 — don't rely on street taxis after midnight</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🚐 Barcelona airport minivan — May 17 arrival</div>
+        <div class="check-where">Pre-arrange: airport → hotel → La Roca → city (~€150–200 total)</div>
+      </div>
+    </div>
+
+    <!-- MALLORCA 2026 DIVIDER -->
+    <div style="margin:20px 0 10px;padding:10px 0 6px;border-top:1px solid rgba(30,140,106,0.3);">
+      <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#5FD4A8;">🌿 Mallorca 2026 — Book Now</span>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🍽️ Restaurant Illeta — Sun May 18, 8:15PM · 8 ppl</div>
+        <div class="check-where">No walk-ins · Call +34 637 077 870 · Fills up weeks in advance</div>
+      </div>
+      <span class="check-urgent">Urgent</span>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">⛵ Soller Boat Charter — Tue May 20 · BBQ package for 8</div>
+        <div class="check-where">WhatsApp all 3: <a href="https://saillavie.com" target="_blank">saillavie.com</a> (+34 611 708 226) · Pete +34 654 234 897 · Alvaro +34 646 099 885</div>
+      </div>
+      <span class="check-urgent">Urgent</span>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🌊 Gran Folies — Mon May 19, 7PM · 8 ppl</div>
+        <div class="check-where"><a href="https://granfolies.com" target="_blank">granfolies.com</a> · +34 971 671 094</div>
+      </div>
+      <span class="check-urgent">Urgent</span>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🍷 Fervor Palma — Tue May 20, dinner · 8 ppl</div>
+        <div class="check-where"><a href="https://grupocardon.com/restaurantes/fervor" target="_blank">grupocardon.com/restaurantes/fervor</a> · Carrer de Can Verí 4, Palma Old Town</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">⛪ Valldemossa Monastery — Mon May 19</div>
+        <div class="check-where"><a href="https://cartuxa.es" target="_blank">cartuxa.es</a> · ~€10/person · Book combined ticket with tower</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🕌 La Seu Cathedral — Wed May 21 morning</div>
+        <div class="check-where"><a href="https://catedraldemallorca.org" target="_blank">catedraldemallorca.org</a> · €9 · Book to skip queues</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🚗 Hire 2–3 rental cars (needed Mon & Tue)</div>
+        <div class="check-where"><a href="https://rentalcars.com" target="_blank">rentalcars.com</a> · Pick up evening of Sun May 18</div>
+      </div>
+    </div>
+
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <div class="check-name">🚐 Mallorca airport transfer — Sun May 18, ~5:15PM</div>
+        <div class="check-where">Pre-book minibus or 2 taxis · ~€25–30/vehicle from PMI to Palmanova</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="checklist-progress">
+    <span id="progress-text">0 of 20 booked</span>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+</section>
+
+<!-- ════════════════ BUDGET ════════════════ -->
+<section id="budget">
+  <h2>💰 Rough Budget Per Person</h2>
+  <p class="budget-note">Excluding flights · All estimates in euros</p>
+
+  <div class="budget-cards">
+
+    <div class="budget-card bcn">
+      <h3>📍 Barcelona <span style="font-size:0.7rem;color:var(--warm-gray);font-family:'DM Sans';font-weight:400;">May 17–18</span></h3>
+      <div class="budget-line"><span class="cat">Dining</span><span class="amt">€40–60</span></div>
+      <div class="budget-line"><span class="cat">Transport (local)</span><span class="amt">€30–50</span></div>
+      <div class="budget-total">
+        <span class="label">Total</span>
+        <span class="total-amt">~€70–110</span>
+      </div>
+    </div>
+
+    <div class="budget-card ibz">
+      <h3>🎉 Ibiza <span style="font-size:0.7rem;color:var(--warm-gray);font-family:'DM Sans';font-weight:400;">May 21–23</span></h3>
+      <div class="budget-line"><span class="cat">Dining</span><span class="amt">€60–100</span></div>
+      <div class="budget-line"><span class="cat">Nightlife / Entry</span><span class="amt">€180–250</span></div>
+      <div class="budget-line"><span class="cat">Drinks</span><span class="amt">€120–180</span></div>
+      <div class="budget-line"><span class="cat">Transport (local)</span><span class="amt">€40–60</span></div>
+      <div class="budget-total">
+        <span class="label">Total</span>
+        <span class="total-amt">~€400–590</span>
+      </div>
+    </div>
+
+    <div class="budget-card fin">
+      <h3>🎤 Barcelona Finale <span style="font-size:0.7rem;color:var(--warm-gray);font-family:'DM Sans';font-weight:400;">May 23–25</span></h3>
+      <div class="budget-line"><span class="cat">Dining</span><span class="amt">€75–115</span></div>
+      <div class="budget-line"><span class="cat">Concert (Bad Bunny)</span><span class="amt">€60–120+</span></div>
+      <div class="budget-line"><span class="cat">Outlets / Shopping</span><span class="amt">Variable</span></div>
+      <div class="budget-line"><span class="cat">Transport (local)</span><span class="amt">€20–30</span></div>
+      <div class="budget-total">
+        <span class="label">Total</span>
+        <span class="total-amt">~€155–265</span>
+      </div>
+    </div>
+
+    <div class="budget-card" style="border-top-color: var(--mallorca); position:relative;">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--mallorca);border-radius:12px 12px 0 0;"></div>
+      <h3>🌿 Mallorca <span style="font-size:0.7rem;color:var(--warm-gray);font-family:'DM Sans';font-weight:400;">May 18–21 '26</span></h3>
+      <div class="budget-line"><span class="cat">Restaurant Illeta (Day 1)</span><span class="amt">~€50</span></div>
+      <div class="budget-line"><span class="cat">Valldemossa Monastery (Day 2)</span><span class="amt">~€10</span></div>
+      <div class="budget-line"><span class="cat">Ca'n Costa lunch (Day 2)</span><span class="amt">~€40</span></div>
+      <div class="budget-line"><span class="cat">Gran Folies dinner (Day 2)</span><span class="amt">~€65</span></div>
+      <div class="budget-line"><span class="cat">Boat charter BBQ+drinks (Day 3)</span><span class="amt">€110–140</span></div>
+      <div class="budget-line"><span class="cat">Soller vintage tram (Day 3)</span><span class="amt">~€8</span></div>
+      <div class="budget-line"><span class="cat">Cocktail bars Palma</span><span class="amt">~€30</span></div>
+      <div class="budget-line"><span class="cat">La Seu Cathedral (Day 4)</span><span class="amt">~€9</span></div>
+      <div class="budget-line"><span class="cat">Car hire split</span><span class="amt">€20–30</span></div>
+      <div class="budget-total">
+        <span class="label">Total (excl. hotel & flights)</span>
+        <span class="total-amt">~€342–382</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ MALLORCA 2026 ════════════════ -->
+<section id="mallorca">
+  <div class="leg-header mal">
+    <span class="leg-number">2026 Trip · May 18–21 · Group of 8</span>
+    <h2>Mal<span>lorca</span></h2>
+    <p class="leg-meta">🌿 Zel Mallorca, Palmanova &nbsp;·&nbsp; Arrive 16:15 · Depart 14:20</p>
+  </div>
+
+  <div class="leg-body mal">
+
+    <!-- DAY 1 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Sun May 18</span>
+        <span class="day-label">Arrival · Golden Hour · Restaurant Illeta <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">4:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Land — Palma Airport (PMI)</div>
+            <div class="event-desc">Touch down at PMI. Clear arrivals, collect bags. Palmanova is about 20 minutes from the airport.<br><span class="price">Pre-book 2 taxis or minibus · ~€25–30/vehicle each way</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">5:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏨</span>Check-in — Zel Mallorca, Palmanova</div>
+            <div class="event-desc">Beachfront hotel right on the sand. Drop bags, freshen up, get settled. Pool, sauna and gym on-site. The breakfast buffet is rated the best hotel breakfast in Spain.<br><span class="price">Ask for sea-view rooms together · +34 971 68 01 50</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">6:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍺</span>First Drinks — Es Carregador Beach</div>
+            <div class="event-desc">Walk straight out of the hotel to the beach. Grab cold drinks at a beach bar and soak up your first Mallorcan golden hour. Sunset in May is around 9 PM.<br><span class="price">Free · 5-min walk from hotel · Save your appetite for Illeta!</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">8:15 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍽️</span>Dinner — Restaurant Illeta, Camp de Mar</div>
+            <div class="event-desc">One of Mallorca's most magical dining spots — the restaurant sits on a tiny island connected to shore by a wooden footbridge, completely surrounded by the sea. Standouts: paella, gambas al ajillo, Iberico starters and legendary Sangria.<br>Request an edge table — arriving at 8:15 PM catches the last golden light over the water.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW — no walk-ins · +34 637 077 870 · ~€45–60/person</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Mon May 19</span>
+        <span class="day-label">Valldemossa · Deia · Gran Folies Dinner <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
+            <div class="event-desc">Included. Fuel up at the legendary hotel buffet. Today you're heading into the UNESCO Tramuntana mountains. Leave hotel by 8:45 AM.<br><span class="price">Pick up rental cars evening before so you leave straight after breakfast</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">9:45 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">⛪</span>Valldemossa — Carthusian Monastery & Village</div>
+            <div class="event-desc">The 14th-century monastery where Chopin and George Sand wintered in 1838. See Chopin's Pleyel piano, their rooms, and an ancient monastic pharmacy. The stone village has sweeping mountain views. Allow 1.5–2 hours.<br>Buy the combined ticket including the tower — views from the top are the highlight. A live Chopin mini-concert often opens the tour.<br><span class="price">~€10/person · 45 min drive · Book at cartuxa.es</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">12:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🏘️</span>Deia — Mallorca's Most Beautiful Village</div>
+            <div class="event-desc">Drive the spectacular cliff road from Valldemossa to Deia — one of the best drives in Europe. A tiny hilltop village of golden stone houses draped in bougainvillea, surrounded by olive groves and mountains plunging to the sea. Climb to the church for panoramic views.<br>Cala Deia — a hidden pebble beach — is a 10-min walk downhill for a quick swim. Allow 1 hour.<br><span class="price">Free · 15 min from Valldemossa</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">1:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🥘</span>Lunch — Ca'n Costa (Valldemossa Road)</div>
+            <div class="event-desc">Perfectly placed between Deia and Valldemossa. Best authentic Mallorcan food on the island — Arroz Brut (aromatic spiced rice), slow-cooked meats, huge portions and the best red sangria you'll ever taste.<br>Ca'n Costa serves lunch Mon–Sat 1–4 PM. Day 2 lunch is the ideal visit.<br><span class="price">~€35–45/person · Call +34 971 612 263 to reserve for 8</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">3:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚗</span>Scenic Drive South — MA-10 Coast Road</div>
+            <div class="event-desc">One of Europe's great drives — the MA-10 winds along the Tramuntana coast past Sa Foradada rock arch, Banyalbufar terraces and the Port d'Andratx marina.<br><span class="price">Stop at Sa Foradada viewpoint (15 mins) — rock arch jutting into the sea · ~1 hr to Port d'Andratx</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🌊</span>Dinner — Beach Club Gran Folies, Port d'Andratx</div>
+            <div class="event-desc">One of Mallorca's most glamorous beach club restaurants, perched on the rocks above the sea. Spectacular cliffside views, Balearic island vibes. The seafood paella is the standout. Sunset from this terrace is extraordinary.<br>Book a restaurant table (not just daybeds). Ask for a sea-view spot. Consider a taxi back so everyone can drink freely.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · granfolies.com · +34 971 671 094 · ~€55–75/person</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Tue May 20</span>
+        <span class="day-label">Soller Boat Charter · Palma Last Night <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Breakfast — Zel Mallorca</div>
+            <div class="event-desc">Early start — big day. Fuel up at the hotel buffet then drive north to Port de Soller. Allow 1 hour for the mountain drive. Leave by 8:45 AM.<br><span class="price">Take the old Coll de Soller mountain road for spectacular views (adds 20 mins)</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚃</span>Soller Town — Vintage Tram to Port (Optional)</div>
+            <div class="event-desc">Park in Soller and ride the legendary 1913 wooden tram down through orange and lemon groves to Port de Soller — 20 minutes of pure nostalgia.<br><span class="price">~€8/person each way · trendesoller.com · First departure ~10:10 AM from Plaza de España</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">⛵</span>Boat Charter — Port de Soller</div>
+            <div class="event-desc">Set sail along the dramatic Tramuntana coastline — the most spectacular stretch of sea in Mallorca. Hidden turquoise coves, sea caves, sheer cliffs. Swim at Cala Tuent, explore the secret cave at Cala Deia, anchor at Sa Foradada.<br>BBQ lunch on board: fresh fish, grilled meats, salads. Drinks included: sangria, Mallorcan white wine, cold beers. Water toys: paddleboards, snorkelling gear, kayaks. 4–5 hours.<br><span class="price" style="background:rgba(212,56,90,0.15);border-color:rgba(212,56,90,0.5);color:#F0889A;">BOOK NOW · ~€80–120/person · Request BBQ food + drinks package for 8</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time"></div>
+          <div class="event-content">
+            <div class="event-name" style="font-size:0.78rem;color:var(--warm-gray);font-family:'DM Sans'">⛵ Boat Operators — message all three, take first available:</div>
+            <div class="event-desc">
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sail La Vie (Xico)</strong> &nbsp;<a href="https://saillavie.com" target="_blank" style="color:var(--gold);text-decoration:none">saillavie.com</a> · +34 611 708 226</div>
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Bonnie Lass Charters (Pete)</strong> · +34 654 234 897</div>
+              <div style="margin:4px 0;"><strong style="color:var(--cream)">Sails Up Mallorca (Alvaro)</strong> · +34 646 099 885</div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">4:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍦</span>Back in Port de Soller — Explore & Relax</div>
+            <div class="event-desc">Stroll the horseshoe harbour, grab an ice cream or coffee. Pick up a bottle of Mallorcan Hierbas liqueur or the island's famous orange liqueur as a souvenir. Then drive south for dinner.</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">7:30 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍷</span>Dinner — Fervor Palma</div>
+            <div class="event-desc">Carrer de Can Verí 4, Palma Old Town &nbsp;<span class="stars">⭐ 4.5</span>&nbsp; · A buzzing, design-forward restaurant in the heart of Palma's old town. Open Tuesdays and great for groups — modern Spanish cuisine, excellent charcoal-grilled meats and creative tapas. Lively atmosphere that flows perfectly into a late-night Palma cocktail bar crawl.<br><span class="price">~€35–50/person · Book ahead · <a href="https://grupocardon.com/restaurantes/fervor" target="_blank" style="color:var(--gold);text-decoration:none">grupocardon.com/restaurantes/fervor</a></span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:00 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍸</span>Last Night Out — Palma Old Town</div>
+            <div class="event-desc"><strong style="color:var(--cream)">After Landing Cocktail Art</strong> — 5 stars, free welcome shot, open until 1 AM<br><strong style="color:var(--cream)">Chapeau Palma</strong> — Top-500 worldwide, open until 2 AM<br>Both in the old town, walking distance from each other.<br><span class="price">~€12/cocktail · Walk-in friendly</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-block open">
+      <div class="day-title" onclick="toggleDay(this)">
+        <span class="day-badge">Wed May 21</span>
+        <span class="day-label">La Seu Cathedral · Fly Home ✈️ <span class="group-tag">Group of 8</span></span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="events">
+        <div class="event">
+          <div class="event-time">8:00 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🍳</span>Final Breakfast — Zel Mallorca</div>
+            <div class="event-desc">One last time at the best hotel breakfast buffet in Spain. Savour it. Check-out is 11 AM — check out by 10:00 AM and store luggage at reception while you head to the cathedral.<br><span class="price">Ask to store bags until you collect them on the way to the airport</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">10:15 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🕌</span>La Seu Cathedral, Palma</div>
+            <div class="event-desc">Palma's breathtaking Gothic cathedral right on the seafront. One of the finest in Europe. Gaudí-redesigned interiors with enormous rose windows casting coloured light across the nave. Allow 45–50 minutes. Then walk the waterfront Paseo Marítimo for one last look at the Bay of Palma.<br><span class="price">€9 entry · Book tickets in advance at catedraldemallorca.org · Dress modestly</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">11:45 AM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">🚗</span>Drive to Palma Airport (PMI)</div>
+            <div class="event-desc">Collect luggage from Zel Mallorca on the way, then head to PMI. Return rental cars at the airport. Allow 90 mins minimum before departure.<br><span class="price">~20 min from Palma · Leave by 11:45 AM at the latest</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-time">2:20 PM</div>
+          <div class="event-content">
+            <div class="event-name"><span class="event-icon">✈️</span>Flight Departs — 14:20 · Adios Mallorca</div>
+            <div class="event-desc">Wheels up. Three days of sun, sea, mountains, food, wine and memories. Mallorca has a way of pulling people back. Until next time.<br><span class="price">Duty-free pick: Mallorcan Hierbas liqueur or island gin — the best island souvenirs</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mallorca Booking Checklist (inline tip) -->
+    <div class="tip-banner">
+      🗓️ <strong>Mallorca 2026 — Book immediately:</strong> Restaurant Illeta (+34 637 077 870, no walk-ins) · Soller Boat Charter (WhatsApp all 3 operators) · Gran Folies (granfolies.com) · Valldemossa Monastery (cartuxa.es) · La Seu Cathedral (catedraldemallorca.org) · 2–3 rental cars · Airport transfer May 18 ~5:15 PM
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ CHECKLIST ════════════════ -->
+<section id="rsvp">
+  <h2>🙋 Who's Coming?</h2>
+  <p class="rsvp-sub">Add your name and mark which legs you're joining · Data stays in your browser</p>
+
+  <div class="rsvp-add">
+    <input class="rsvp-input" id="rsvp-name-input" type="text" placeholder="Enter your name…" maxlength="24" />
+    <button class="rsvp-btn" onclick="rsvpAdd()">Add Me</button>
+  </div>
+
+  <div class="rsvp-legs">
+    <div class="rsvp-leg-card">
+      <div class="rsvp-leg-header">
+        <h3>📍 Barcelona <span style="font-size:0.7rem;font-family:'DM Sans';font-weight:300;color:var(--warm-gray);">May 17–18</span></h3>
+        <span class="rsvp-count" id="count-bcn1">0 going</span>
+      </div>
+      <div class="rsvp-people" id="people-bcn1">
+        <span class="rsvp-empty">No one added yet</span>
+      </div>
+    </div>
+    <div class="rsvp-leg-card">
+      <div class="rsvp-leg-header">
+        <h3>🎉 Ibiza <span style="font-size:0.7rem;font-family:'DM Sans';font-weight:300;color:var(--warm-gray);">May 21–23</span></h3>
+        <span class="rsvp-count" id="count-ibz">0 going</span>
+      </div>
+      <div class="rsvp-people" id="people-ibz">
+        <span class="rsvp-empty">No one added yet</span>
+      </div>
+    </div>
+    <div class="rsvp-leg-card">
+      <div class="rsvp-leg-header">
+        <h3>🎤 Finale <span style="font-size:0.7rem;font-family:'DM Sans';font-weight:300;color:var(--warm-gray);">May 23–25</span></h3>
+        <span class="rsvp-count" id="count-fin">0 going</span>
+      </div>
+      <div class="rsvp-people" id="people-fin">
+        <span class="rsvp-empty">No one added yet</span>
+      </div>
+    </div>
+    <div class="rsvp-leg-card">
+      <div class="rsvp-leg-header">
+        <h3>🌿 Mallorca '26 <span style="font-size:0.7rem;font-family:'DM Sans';font-weight:300;color:var(--warm-gray);">May 18–21</span></h3>
+        <span class="rsvp-count" id="count-mal">0 going</span>
+      </div>
+      <div class="rsvp-people" id="people-mal">
+        <span class="rsvp-empty">No one added yet</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ MAP ════════════════ -->
+<section id="map-section">
+  <h2>🗺️ All Venues</h2>
+  <p class="map-sub">Every restaurant, club, and attraction on the trip</p>
+
+  <div class="map-filters">
+    <button class="map-filter-btn all active" onclick="filterMap('all',this)">All</button>
+    <button class="map-filter-btn bcn-f" onclick="filterMap('bcn',this)">📍 Barcelona</button>
+    <button class="map-filter-btn ibz-f" onclick="filterMap('ibz',this)">🎉 Ibiza</button>
+    <button class="map-filter-btn fin-f" onclick="filterMap('fin',this)">🎤 Finale</button>
+    <button class="map-filter-btn mal-f" onclick="filterMap('mal',this)">🌿 Mallorca</button>
+  </div>
+
+  <div class="map-container">
+    <div style="position:relative; width:100%; height:420px; background:#1a2535; overflow:hidden; border-radius:16px 16px 0 0;" id="custom-map">
+      <!-- Region label -->
+      <div id="map-region-label" style="position:absolute;top:14px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:5px 16px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:#E8D08A;pointer-events:none;white-space:nowrap;z-index:10;">Spain &amp; Mallorca · All Venues</div>
+      <!-- Tooltip -->
+      <div id="map-tooltip" style="display:none;position:absolute;background:rgba(26,20,16,0.95);border:1px solid rgba(201,168,76,0.3);border-radius:8px;padding:8px 12px;pointer-events:none;z-index:20;min-width:140px;">
+        <div id="tt-name" style="font-family:'Playfair Display',serif;font-size:0.88rem;color:#FAF7F0;margin-bottom:2px;"></div>
+        <div id="tt-type" style="font-size:0.72rem;color:#8A7F78;"></div>
+      </div>
+      <svg id="map-svg" width="100%" height="100%" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
+        <!-- Ocean background -->
+        <rect width="800" height="420" fill="#1a2535"/>
+        <!-- Spain landmass (simplified) -->
+        <path d="M80,60 L720,60 L740,100 L750,160 L730,220 L700,260 L660,290 L620,310 L580,320 L540,310 L500,300 L460,295 L420,300 L380,310 L340,305 L300,295 L260,280 L230,260 L200,230 L170,200 L140,170 L100,140 L70,100 Z" fill="#2d3d2a" opacity="0.7"/>
+        <!-- Ibiza island -->
+        <ellipse cx="480" cy="345" rx="28" ry="18" fill="#2d3d2a" opacity="0.8"/>
+        <text x="480" y="370" text-anchor="middle" font-size="9" fill="#5FD4A8" opacity="0.7" font-family="DM Sans">Ibiza</text>
+        <!-- Mallorca island -->
+        <ellipse cx="610" cy="330" rx="48" ry="28" fill="#2d3d2a" opacity="0.8"/>
+        <text x="610" y="368" text-anchor="middle" font-size="9" fill="#5FD4A8" opacity="0.7" font-family="DM Sans">Mallorca</text>
+        <!-- Barcelona label area -->
+        <text x="320" y="175" text-anchor="middle" font-size="9" fill="#8A7F78" opacity="0.5" font-family="DM Sans">SPAIN</text>
+
+        <!-- ── VENUE PINS ── rendered by JS below ── -->
+        <g id="pins-layer"></g>
+      </svg>
+    </div>
+    <div class="map-venue-list" id="venue-list">
+      <!-- BCN LEG 1 -->
+      <div class="map-venue" data-leg="bcn" onclick="openVenueMap('La Roca Village Outlet, Barcelona')">
+        <div class="map-dot" style="background:#D4385A"></div>
+        <div><div class="map-venue-name">La Roca Village</div><div class="map-venue-type">🛍️ Outlets · BCN Day 1</div></div>
+      </div>
+      <div class="map-venue" data-leg="bcn" onclick="openVenueMap('El Nacional Barcelona')">
+        <div class="map-dot" style="background:#D4385A"></div>
+        <div><div class="map-venue-name">El Nacional</div><div class="map-venue-type">🍽️ Dinner · BCN Day 1</div></div>
+      </div>
+      <div class="map-venue" data-leg="bcn" onclick="openVenueMap('Sagrada Familia Barcelona')">
+        <div class="map-dot" style="background:#D4385A"></div>
+        <div><div class="map-venue-name">Sagrada Família</div><div class="map-venue-type">⛪ Attraction · BCN Day 2</div></div>
+      </div>
+      <!-- IBIZA -->
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('Blue Marlin Ibiza Cala Jondal')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">Blue Marlin</div><div class="map-venue-type">🏖️ Beach Club · May 21</div></div>
+      </div>
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('Zazu Ibiza Beach Club')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">Zazú Beach Club</div><div class="map-venue-type">🏖️ Beach Club · May 22</div></div>
+      </div>
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('Ushuaia Ibiza Beach Hotel')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">Ushuaïa</div><div class="map-venue-type">🎉 Superclub · Ibiza</div></div>
+      </div>
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('El Chiringuito Es Cavallet Ibiza')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">El Chiringuito</div><div class="map-venue-type">🦞 Dinner · Ibiza</div></div>
+      </div>
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('Pacha Ibiza')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">Pacha</div><div class="map-venue-type">🎵 Club · Ibiza</div></div>
+      </div>
+      <div class="map-venue" data-leg="ibz" onclick="openVenueMap('Calma restaurant Ibiza Marina')">
+        <div class="map-dot" style="background:#2E86AB"></div>
+        <div><div class="map-venue-name">Calma — Marina</div><div class="map-venue-type">🐟 Lunch · Ibiza</div></div>
+      </div>
+      <!-- FINALE -->
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Barceloneta Beach Barcelona')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Barceloneta Beach</div><div class="map-venue-type">🌊 Beach · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('La Selva Barcelona restaurant')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">La Selva</div><div class="map-venue-type">🥩 Dinner · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Estadi Olimpic Lluis Companys Barcelona')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Estadi Olímpic</div><div class="map-venue-type">🎤 Bad Bunny · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Passeig de Gracia Barcelona')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Passeig de Gràcia</div><div class="map-venue-type">🛍️ Shopping · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Tapeo El Born Barcelona')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Tapeo El Born</div><div class="map-venue-type">🍷 Tapas · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Gothic Quarter Barcelona')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Gothic Quarter</div><div class="map-venue-type">🏛️ Tour · Finale</div></div>
+      </div>
+      <div class="map-venue" data-leg="fin" onclick="openVenueMap('Arcano Restaurant Barcelona Gothic')">
+        <div class="map-dot" style="background:#7B5EA7"></div>
+        <div><div class="map-venue-name">Arcano Cave</div><div class="map-venue-type">🍽️ Farewell Dinner</div></div>
+      </div>
+      <!-- MALLORCA -->
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Zel Mallorca hotel Palmanova')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Zel Mallorca</div><div class="map-venue-type">🏨 Hotel · Palmanova</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Restaurant Illeta Camp de Mar Mallorca')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Restaurant Illeta</div><div class="map-venue-type">🍽️ Dinner · Day 1</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Valldemossa monastery Mallorca')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Valldemossa Monastery</div><div class="map-venue-type">⛪ Attraction · Day 2</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Deia village Mallorca')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Deia Village</div><div class="map-venue-type">🏘️ Village · Day 2</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Gran Folies beach club Port Andratx Mallorca')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Gran Folies</div><div class="map-venue-type">🌊 Dinner · Day 2</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('Port de Soller Mallorca boat charter')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">Port de Soller</div><div class="map-venue-type">⛵ Boat Charter · Day 3</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('La Seu Cathedral Palma Mallorca')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">La Seu Cathedral</div><div class="map-venue-type">🕌 Cathedral · Day 4</div></div>
+      </div>
+      <div class="map-venue" data-leg="mal" onclick="openVenueMap('After Landing Cocktail Bar Palma')">
+        <div class="map-dot" style="background:#1E8C6A"></div>
+        <div><div class="map-venue-name">After Landing / Chapeau</div><div class="map-venue-type">🍸 Cocktails · Palma</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TOOLS ════════════════ -->
+<section id="tools">
+  <h2>🛠️ Trip Tools</h2>
+  <p class="tools-sub">Everything you need on the ground</p>
+
+  <div class="tools-grid">
+
+    <!-- Currency Converter -->
+    <div class="tool-card">
+      <div class="tool-card-header">
+        <span class="tool-card-icon">💱</span>
+        <span class="tool-card-title">EUR ↔ USD Converter</span>
+      </div>
+      <div class="tool-card-body">
+        <div class="currency-row">
+          <span class="currency-label" id="lbl-top">EUR</span>
+          <input class="currency-input" id="eur-input" type="number" placeholder="0" oninput="convertCurrency('eur')" />
+        </div>
+        <div class="currency-swap">
+          <button class="swap-btn" onclick="swapCurrency()" title="Swap">⇅ swap</button>
+        </div>
+        <div class="currency-row">
+          <span class="currency-label" id="lbl-bot">USD</span>
+          <input class="currency-input" id="usd-input" type="number" placeholder="0" oninput="convertCurrency('usd')" />
+        </div>
+        <p class="currency-rate" id="rate-display">Rate: 1 EUR ≈ 1.085 USD (approx)</p>
+        <div class="currency-quick">
+          <span style="font-size:0.7rem;color:var(--warm-gray);width:100%;margin-bottom:2px;">Quick fill (EUR):</span>
+          <button class="quick-btn" onclick="setEur(25)">€25</button>
+          <button class="quick-btn" onclick="setEur(50)">€50</button>
+          <button class="quick-btn" onclick="setEur(80)">€80</button>
+          <button class="quick-btn" onclick="setEur(100)">€100</button>
+          <button class="quick-btn" onclick="setEur(200)">€200</button>
+          <button class="quick-btn" onclick="setEur(500)">€500</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Packing List -->
+    <div class="tool-card">
+      <div class="tool-card-header">
+        <span class="tool-card-icon">🧳</span>
+        <span class="tool-card-title">Packing List</span>
+      </div>
+      <div class="tool-card-body">
+        <div class="pack-progress-row">
+          <span id="pack-progress-text">0 of 24 packed</span>
+          <div class="pack-prog-bar"><div class="pack-prog-fill" id="pack-prog-fill"></div></div>
+        </div>
+
+        <div class="pack-category">
+          <div class="pack-cat-title">🌞 Beach & Club</div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Swimwear (2–3 sets)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Club outfit(s)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Concert outfit — Bad Bunny 🎤</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Sandals / flip-flops</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Sunglasses</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Sunscreen SPF 50+</span></div>
+        </div>
+
+        <div class="pack-category">
+          <div class="pack-cat-title">👗 Day Wear</div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Casual daytime outfits</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Walking shoes / sneakers</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Light jacket / layer</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Dress shoes for dinner</span></div>
+        </div>
+
+        <div class="pack-category">
+          <div class="pack-cat-title">📋 Documents</div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Passport (valid 6+ months)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Flight confirmations</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Hotel bookings printed/saved</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Bad Bunny ticket (screenshot)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Travel insurance info</span></div>
+        </div>
+
+        <div class="pack-category">
+          <div class="pack-cat-title">⚡ Tech & Misc</div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>EU plug adapter (Type C/F)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Portable charger / power bank</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Noise-cancelling headphones</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Earbuds for concert</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Cash in euros (€100–200)</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Credit card w/ no foreign fees</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Ibuprofen / hangover kit 💊</span></div>
+          <div class="pack-item" onclick="togglePack(this)"><div class="pack-cb"></div><span>Reef-safe sunscreen</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency Info -->
+    <div class="tool-card">
+      <div class="tool-card-header">
+        <span class="tool-card-icon">🚨</span>
+        <span class="tool-card-title">Emergency Info</span>
+      </div>
+      <div class="tool-card-body">
+
+        <div class="emergency-item">
+          <div class="emergency-icon">🆘</div>
+          <div>
+            <div class="emergency-label">Spain Emergency (All)</div>
+            <div class="emergency-number">112</div>
+            <div class="emergency-note">Police, Fire, Ambulance — works everywhere in Spain & Ibiza</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">👮</div>
+          <div>
+            <div class="emergency-label">National Police</div>
+            <div class="emergency-number">091</div>
+            <div class="emergency-note">Non-emergency crime reports, Barcelona & mainland</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">🏥</div>
+          <div>
+            <div class="emergency-label">Hospital Barcelona</div>
+            <div class="emergency-value">Hospital Clínic</div>
+            <div class="emergency-note">Carrer de Villarroel 170 · +34 932 275 400</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">🏥</div>
+          <div>
+            <div class="emergency-label">Hospital Ibiza</div>
+            <div class="emergency-value">Can Misses Hospital</div>
+            <div class="emergency-note">Carretera Corona · +34 971 397 000</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">🇺🇸</div>
+          <div>
+            <div class="emergency-label">US Embassy Madrid</div>
+            <div class="emergency-value">+34 915 872 200</div>
+            <div class="emergency-note">Lost passport, emergency assistance for US citizens</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">💳</div>
+          <div>
+            <div class="emergency-label">Lost / Stolen Card</div>
+            <div class="emergency-value">Call your bank immediately</div>
+            <div class="emergency-note">Visa: +1 800 847 2911 · Mastercard: +1 800 627 8372</div>
+          </div>
+        </div>
+
+        <div class="emergency-item">
+          <div class="emergency-icon">☎️</div>
+          <div>
+            <div class="emergency-label">Calling from Spain</div>
+            <div class="emergency-value">Dial +1 before US numbers</div>
+            <div class="emergency-note">Spain country code is +34 · Use Google Translate offline</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ PHRASES ════════════════ -->
+<section id="phrases">
+  <h2>🗣️ Spanish Phrases</h2>
+  <p class="phrases-sub">Tap a card to copy the Spanish phrase · Impress the locals</p>
+
+  <div class="phrases-categories">
+    <button class="phrase-filter active" onclick="filterPhrases('all',this)">All</button>
+    <button class="phrase-filter" onclick="filterPhrases('basics',this)">Basics</button>
+    <button class="phrase-filter" onclick="filterPhrases('food',this)">Food & Drink</button>
+    <button class="phrase-filter" onclick="filterPhrases('night',this)">Nightlife</button>
+    <button class="phrase-filter" onclick="filterPhrases('emergency',this)">Emergency</button>
+  </div>
+
+  <div class="phrases-grid" id="phrases-grid">
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'Hola, ¿cómo estás?')">
+      <div class="phrase-es">Hola, ¿cómo estás?</div>
+      <div class="phrase-en">Hi, how are you?</div>
+      <div class="phrase-phonetic">OH-lah, KO-mo es-TAHS</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'Por favor')">
+      <div class="phrase-es">Por favor / Gracias</div>
+      <div class="phrase-en">Please / Thank you</div>
+      <div class="phrase-phonetic">por fa-VOR / GRA-thyahs</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'¿Hablas inglés?')">
+      <div class="phrase-es">¿Hablas inglés?</div>
+      <div class="phrase-en">Do you speak English?</div>
+      <div class="phrase-phonetic">AH-blas een-GLAYS</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'¿Dónde está el baño?')">
+      <div class="phrase-es">¿Dónde está el baño?</div>
+      <div class="phrase-en">Where is the bathroom?</div>
+      <div class="phrase-phonetic">DON-deh es-TAH el BAH-nyo</div>
+      <div class="phrase-context">Essential</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'¿Cuánto cuesta?')">
+      <div class="phrase-es">¿Cuánto cuesta?</div>
+      <div class="phrase-en">How much does it cost?</div>
+      <div class="phrase-phonetic">KWAHN-to KWES-tah</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="food" onclick="copyPhrase(this,'La carta, por favor')">
+      <div class="phrase-es">La carta, por favor</div>
+      <div class="phrase-en">The menu, please</div>
+      <div class="phrase-phonetic">lah KAR-tah, por fa-VOR</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="food" onclick="copyPhrase(this,'Una mesa para ocho, por favor')">
+      <div class="phrase-es">Una mesa para ocho</div>
+      <div class="phrase-en">A table for eight, please</div>
+      <div class="phrase-phonetic">OO-nah MEH-sah PAH-rah OH-cho</div>
+      <div class="phrase-context">Dining</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="food" onclick="copyPhrase(this,'La cuenta, por favor')">
+      <div class="phrase-es">La cuenta, por favor</div>
+      <div class="phrase-en">The bill, please</div>
+      <div class="phrase-phonetic">lah KWEN-tah, por fa-VOR</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="food" onclick="copyPhrase(this,'Dos cervezas, por favor')">
+      <div class="phrase-es">Dos cervezas, por favor</div>
+      <div class="phrase-en">Two beers, please</div>
+      <div class="phrase-phonetic">dos ser-VEH-sahs</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="food" onclick="copyPhrase(this,'¡Está delicioso!')">
+      <div class="phrase-es">¡Está delicioso!</div>
+      <div class="phrase-en">It's delicious!</div>
+      <div class="phrase-phonetic">es-TAH deh-lee-SYOH-so</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="night" onclick="copyPhrase(this,'¿Dónde está la discoteca?')">
+      <div class="phrase-es">¿Dónde está la discoteca?</div>
+      <div class="phrase-en">Where is the club?</div>
+      <div class="phrase-phonetic">DON-deh es-TAH la dis-ko-TEH-kah</div>
+      <div class="phrase-context">Nightlife</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="night" onclick="copyPhrase(this,'Tengo reserva a nombre de…')">
+      <div class="phrase-es">Tengo reserva a nombre de…</div>
+      <div class="phrase-en">I have a reservation under…</div>
+      <div class="phrase-phonetic">TEN-go reh-SER-vah ah NOM-breh deh</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="night" onclick="copyPhrase(this,'¡Salud!')">
+      <div class="phrase-es">¡Salud!</div>
+      <div class="phrase-en">Cheers!</div>
+      <div class="phrase-phonetic">sah-LOOD</div>
+      <div class="phrase-context">Essential</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="night" onclick="copyPhrase(this,'¿Cuánto cuesta la entrada?')">
+      <div class="phrase-es">¿Cuánto cuesta la entrada?</div>
+      <div class="phrase-en">How much is entry?</div>
+      <div class="phrase-phonetic">KWAHN-to KWES-tah la en-TRAH-dah</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="emergency" onclick="copyPhrase(this,'Necesito ayuda')">
+      <div class="phrase-es">Necesito ayuda</div>
+      <div class="phrase-en">I need help</div>
+      <div class="phrase-phonetic">neh-seh-SEE-to ah-YOO-dah</div>
+      <div class="phrase-context">Emergency</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="emergency" onclick="copyPhrase(this,'Llama a la policía')">
+      <div class="phrase-es">Llama a la policía</div>
+      <div class="phrase-en">Call the police</div>
+      <div class="phrase-phonetic">YAH-mah ah lah poh-lee-SEE-ah</div>
+      <div class="phrase-context">Emergency</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="emergency" onclick="copyPhrase(this,'Me han robado')">
+      <div class="phrase-es">Me han robado</div>
+      <div class="phrase-en">I've been robbed</div>
+      <div class="phrase-phonetic">meh ahn roh-BAH-do</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+    <div class="phrase-card" data-cat="basics" onclick="copyPhrase(this,'¡Qué lo paséis genial!')">
+      <div class="phrase-es">¡Qué lo paséis genial!</div>
+      <div class="phrase-en">Have an amazing time!</div>
+      <div class="phrase-phonetic">keh lo pah-SAYS heh-NYAL</div>
+      <div class="phrase-context">The trip motto 🇪🇸</div>
+      <span class="phrase-copied">Copied!</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-flag">🇪🇸</span>
+  <p class="footer-tagline">¡Que lo paséis genial!</p>
+  <p>Spain 2025 · Barcelona · Ibiza · Barcelona &nbsp;&nbsp;|&nbsp;&nbsp; Mallorca 2026</p>
+</footer>
+
+<script>
+  // ─── Toggle day sections ───
+  function toggleDay(titleEl) {
+    const block = titleEl.closest('.day-block');
+    block.classList.toggle('open');
+  }
+
+  // ─── Checklist with localStorage ───
+  const STORAGE_KEY = 'spain2025_checklist';
+
+  function loadChecklist() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch { return {}; }
+  }
+
+  function saveChecklist(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {}
+  }
+
+  function updateProgress() {
+    const items = document.querySelectorAll('.check-item');
+    const checked = document.querySelectorAll('.check-item.checked').length;
+    const total = items.length;
+    document.getElementById('progress-text').textContent = `${checked} of ${total} booked`;
+    document.getElementById('progress-fill').style.width = `${(checked / total) * 100}%`;
+  }
+
+  function toggleCheck(el) {
+    const state = loadChecklist();
+    const key = el.querySelector('.check-name').textContent.trim().slice(0, 40);
+    const wasChecked = el.classList.contains('checked');
+    el.classList.toggle('checked');
+    state[key] = !wasChecked;
+    saveChecklist(state);
+    updateProgress();
+  }
+
+  // Restore on load
+  window.addEventListener('DOMContentLoaded', () => {
+    const state = loadChecklist();
+    document.querySelectorAll('.check-item').forEach(el => {
+      const key = el.querySelector('.check-name').textContent.trim().slice(0, 40);
+      if (state[key]) el.classList.add('checked');
+    });
+    updateProgress();
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  });
+
+  // Smooth scroll for nav
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id && id.startsWith('#')) {
+        e.preventDefault();
+        document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ─── COUNTDOWN — picks next upcoming trip ───
+  const TRIPS = [
+    { date: new Date('2025-05-17T00:00:00'), label: '· Spain, May 17 2025' },
+    { date: new Date('2026-05-18T00:00:00'), label: '· Mallorca, May 18 2026' },
+  ];
+  function getNextTrip() {
+    const now = new Date();
+    return TRIPS.find(t => t.date > now) || TRIPS[TRIPS.length - 1];
+  }
+  const TRIP_DATE = getNextTrip().date;
+  const tripLabel = document.getElementById('countdown-trip-label');
+  if (tripLabel) tripLabel.textContent = getNextTrip().label;
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = TRIP_DATE - now;
+    const bar = document.getElementById('countdown-bar');
+    if (diff <= 0) {
+      bar.innerHTML = '<span class="countdown-gone">🎉 Adventure is underway — ¡Que lo paséis genial! 🇪🇸</span>';
+      return;
+    }
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000)  / 60000);
+    const secs  = Math.floor((diff % 60000)    / 1000);
+    document.getElementById('cd-days').textContent  = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent  = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent  = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ─── RSVP ───
+  const RSVP_KEY = 'spain2025_rsvp';
+  const AVATAR_COLORS = ['#D4385A','#2E86AB','#7B5EA7','#C9A84C','#4CAF50','#FF6B6B','#45B7D1','#96CEB4'];
+
+  function loadRsvp() {
+    try { return JSON.parse(localStorage.getItem(RSVP_KEY)) || { bcn1:[], ibz:[], fin:[], mal:[] }; }
+    catch { return { bcn1:[], ibz:[], fin:[], mal:[] }; }
+  }
+  function saveRsvp(data) {
+    try { localStorage.setItem(RSVP_KEY, JSON.stringify(data)); } catch {}
+  }
+
+  function renderRsvp() {
+    const data = loadRsvp();
+    ['bcn1','ibz','fin','mal'].forEach(leg => {
+      const container = document.getElementById('people-' + leg);
+      const countEl = document.getElementById('count-' + leg);
+      const people = data[leg] || [];
+      countEl.textContent = people.length + ' going';
+      if (people.length === 0) {
+        container.innerHTML = '<span class="rsvp-empty">No one added yet</span>';
+        return;
+      }
+      container.innerHTML = people.map((name, i) => {
+        const color = AVATAR_COLORS[i % AVATAR_COLORS.length];
+        const initials = name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+        return `<div class="rsvp-person">
+          <div class="rsvp-avatar" style="background:${color}">${initials}</div>
+          ${name}
+          <span class="rsvp-remove" onclick="rsvpRemove('${leg}','${name.replace(/'/g,"\\'")}')">✕</span>
+        </div>`;
+      }).join('');
+    });
+  }
+
+  function rsvpAdd() {
+    const input = document.getElementById('rsvp-name-input');
+    const name = input.value.trim();
+    if (!name) return;
+    const data = loadRsvp();
+    // Add to all legs by default, show modal-style selection
+    const legs = ['bcn1','ibz','fin','mal'];
+    const legNames = ['Barcelona (May 17–18 2025)','Ibiza (May 21–23 2025)','Barcelona Finale (May 23–25 2025)','Mallorca (May 18–21 2026)'];
+    const choices = [];
+    for (let i = 0; i < legs.length; i++) {
+      if (confirm(`Is ${name} joining: ${legNames[i]}?`)) {
+        choices.push(legs[i]);
+      }
+    }
+    choices.forEach(leg => {
+      if (!data[leg].includes(name)) data[leg].push(name);
+    });
+    saveRsvp(data);
+    renderRsvp();
+    input.value = '';
+    input.focus();
+  }
+
+  function rsvpRemove(leg, name) {
+    const data = loadRsvp();
+    data[leg] = data[leg].filter(n => n !== name);
+    saveRsvp(data);
+    renderRsvp();
+  }
+
+  document.getElementById('rsvp-name-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') rsvpAdd();
+  });
+
+  renderRsvp();
+
+  // ─── MAP FILTER ───
+  // ─── CUSTOM SVG MAP ───
+  // Venues with real lat/lon mapped to SVG 800x420 viewBox
+  // Spain: lon ~-9 to +4, lat ~35.5 to 44 mapped to x:60-740, y:30-390
+  const VENUES = [
+    // Barcelona leg
+    { leg:'bcn', name:'La Roca Village',    type:'🛍️ Outlets · BCN',       lat:41.614, lon:2.330,  color:'#D4385A', query:'La Roca Village Outlet Barcelona' },
+    { leg:'bcn', name:'El Nacional',        type:'🍽️ Dinner · BCN Day 1',   lat:41.391, lon:2.163,  color:'#D4385A', query:'El Nacional Barcelona' },
+    { leg:'bcn', name:'Sagrada Família',    type:'⛪ Attraction · BCN',      lat:41.404, lon:2.174,  color:'#D4385A', query:'Sagrada Familia Barcelona' },
+    // Ibiza leg
+    { leg:'ibz', name:'Blue Marlin',        type:'🏖️ Beach Club · May 21',  lat:38.872, lon:1.397,  color:'#2E86AB', query:'Blue Marlin Ibiza Cala Jondal' },
+    { leg:'ibz', name:'Zazú Beach Club',    type:'🏖️ Beach Club · May 22',  lat:38.883, lon:1.410,  color:'#2E86AB', query:'Zazu Ibiza Beach Club' },
+    { leg:'ibz', name:'Ushuaïa',            type:'🎉 Superclub · Ibiza',     lat:38.879, lon:1.413,  color:'#2E86AB', query:'Ushuaia Ibiza Beach Hotel' },
+    { leg:'ibz', name:'El Chiringuito',     type:'🦞 Dinner · May 22',       lat:38.870, lon:1.406,  color:'#2E86AB', query:'El Chiringuito Es Cavallet Ibiza' },
+    { leg:'ibz', name:'Pacha',              type:'🎵 Club · Ibiza',          lat:38.908, lon:1.440,  color:'#2E86AB', query:'Pacha Ibiza' },
+    { leg:'ibz', name:'Calma Marina',       type:'🐟 Lunch · Ibiza',         lat:38.906, lon:1.436,  color:'#2E86AB', query:'Calma restaurant Ibiza Marina' },
+    // Finale
+    { leg:'fin', name:'La Selva',           type:'🥩 Dinner · Finale',       lat:41.396, lon:2.158,  color:'#7B5EA7', query:'La Selva Barcelona restaurant' },
+    { leg:'fin', name:'Estadi Olímpic',     type:'🎤 Bad Bunny',             lat:41.364, lon:2.157,  color:'#7B5EA7', query:'Estadi Olimpic Lluis Companys Barcelona' },
+    { leg:'fin', name:'Passeig de Gràcia',  type:'🛍️ Shopping · Finale',    lat:41.392, lon:2.165,  color:'#7B5EA7', query:'Passeig de Gracia Barcelona' },
+    { leg:'fin', name:'Tapeo El Born',      type:'🍷 Tapas · Finale',        lat:41.383, lon:2.181,  color:'#7B5EA7', query:'Tapeo El Born Barcelona' },
+    { leg:'fin', name:'Gothic Quarter',     type:'🏛️ Walking Tour',          lat:41.382, lon:2.175,  color:'#7B5EA7', query:'Gothic Quarter Barcelona' },
+    { leg:'fin', name:'Arcano Cave',        type:'🍽️ Farewell Dinner',       lat:41.383, lon:2.176,  color:'#7B5EA7', query:'Arcano Restaurant Barcelona Gothic' },
+    // Mallorca
+    { leg:'mal', name:'Zel Mallorca',       type:'🏨 Hotel · Palmanova',     lat:39.519, lon:2.489,  color:'#1E8C6A', query:'Zel Mallorca hotel Palmanova' },
+    { leg:'mal', name:'Restaurant Illeta',  type:'🍽️ Dinner · Day 1',       lat:39.535, lon:2.410,  color:'#1E8C6A', query:'Restaurant Illeta Camp de Mar Mallorca' },
+    { leg:'mal', name:'Valldemossa',        type:'⛪ Monastery · Day 2',     lat:39.712, lon:2.622,  color:'#1E8C6A', query:'Valldemossa monastery Mallorca' },
+    { leg:'mal', name:'Deia Village',       type:'🏘️ Village · Day 2',       lat:39.747, lon:2.648,  color:'#1E8C6A', query:'Deia village Mallorca' },
+    { leg:'mal', name:'Gran Folies',        type:'🌊 Dinner · Day 2',        lat:39.539, lon:2.388,  color:'#1E8C6A', query:'Gran Folies beach club Port Andratx Mallorca' },
+    { leg:'mal', name:'Port de Soller',     type:'⛵ Boat Charter · Day 3',  lat:39.796, lon:2.694,  color:'#1E8C6A', query:'Port de Soller Mallorca boat charter' },
+    { leg:'mal', name:'La Seu Cathedral',   type:'🕌 Cathedral · Day 4',     lat:39.567, lon:2.650,  color:'#1E8C6A', query:'La Seu Cathedral Palma Mallorca' },
+    { leg:'mal', name:'Fervor Palma',       type:'🍷 Dinner · Day 3',        lat:39.570, lon:2.648,  color:'#1E8C6A', query:'Fervor Palma restaurant' },
+    { leg:'mal', name:'After Landing/Chapeau', type:'🍸 Cocktails · Palma', lat:39.571, lon:2.647,  color:'#1E8C6A', query:'After Landing Cocktail Bar Palma' },
+  ];
+
+  // Map geographic bounds to SVG coords
+  const GEO = { lonMin:-3.2, lonMax:3.6, latMin:38.6, latMax:42.0 };
+  const SVG = { x0:50, x1:750, y0:20, y1:400 };
+
+  function geoToSvg(lat, lon) {
+    const x = SVG.x0 + (lon - GEO.lonMin) / (GEO.lonMax - GEO.lonMin) * (SVG.x1 - SVG.x0);
+    const y = SVG.y1 - (lat - GEO.latMin) / (GEO.latMax - GEO.latMin) * (SVG.y1 - SVG.y0);
+    return { x, y };
+  }
+
+  let activeMapLeg = 'all';
+
+  function renderPins() {
+    const layer = document.getElementById('pins-layer');
+    if (!layer) return;
+    layer.innerHTML = '';
+    VENUES.forEach((v, i) => {
+      const show = activeMapLeg === 'all' || v.leg === activeMapLeg;
+      if (!show) return;
+      const { x, y } = geoToSvg(v.lat, v.lon);
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'map-pin');
+      g.style.cursor = 'pointer';
+      g.dataset.query = v.query;
+      g.dataset.name = v.name;
+      g.dataset.type = v.type;
+
+      // Pulse ring
+      const pulse = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      pulse.setAttribute('cx', x); pulse.setAttribute('cy', y); pulse.setAttribute('r', 10);
+      pulse.setAttribute('fill', v.color); pulse.setAttribute('opacity', '0.15');
+
+      // Pin circle
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', x); circle.setAttribute('cy', y); circle.setAttribute('r', 6);
+      circle.setAttribute('fill', v.color); circle.setAttribute('stroke', '#1A1410'); circle.setAttribute('stroke-width', '1.5');
+
+      g.appendChild(pulse); g.appendChild(circle);
+
+      g.addEventListener('mouseenter', (e) => {
+        const tt = document.getElementById('map-tooltip');
+        document.getElementById('tt-name').textContent = v.name;
+        document.getElementById('tt-type').textContent = v.type;
+        const rect = document.getElementById('custom-map').getBoundingClientRect();
+        const svgEl = document.getElementById('map-svg');
+        const svgRect = svgEl.getBoundingClientRect();
+        const scaleX = svgRect.width / 800;
+        const scaleY = svgRect.height / 420;
+        let tx = x * scaleX - rect.left + svgRect.left + 12;
+        let ty = y * scaleY - rect.top + svgRect.top - 20;
+        if (tx + 160 > rect.width) tx -= 160;
+        tt.style.left = tx + 'px';
+        tt.style.top = ty + 'px';
+        tt.style.display = 'block';
+        circle.setAttribute('r', 9);
+      });
+      g.addEventListener('mouseleave', () => {
+        document.getElementById('map-tooltip').style.display = 'none';
+        circle.setAttribute('r', 6);
+      });
+      g.addEventListener('click', () => {
+        window.open('https://www.google.com/maps/search/' + encodeURIComponent(v.query), '_blank');
+      });
+
+      layer.appendChild(g);
+    });
+  }
+
+  // Init map on load
+  window.addEventListener('DOMContentLoaded', () => { renderPins(); });
+
+  function filterMap(leg, btn) {
+    document.querySelectorAll('.map-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeMapLeg = leg;
+    renderPins();
+
+    // Update label
+    const labels = { all:'Spain & Mallorca · All Venues', bcn:'📍 Barcelona', ibz:'🎉 Ibiza', fin:'🎤 Barcelona Finale', mal:'🌿 Mallorca 2026' };
+    const lbl = document.getElementById('map-region-label');
+    if (lbl) lbl.textContent = labels[leg] || '';
+
+    // Filter venue cards below map too
+    document.querySelectorAll('.map-venue').forEach(v => {
+      if (leg === 'all' || v.dataset.leg === leg) v.classList.remove('hidden');
+      else v.classList.add('hidden');
+    });
+  }
+
+  function openVenueMap(query) {
+    window.open('https://www.google.com/maps/search/' + encodeURIComponent(query), '_blank');
+  }
+
+  // ─── CURRENCY CONVERTER ───
+  const EUR_TO_USD = 1.085;
+  let topCurrency = 'eur';
+
+  function convertCurrency(from) {
+    if (from === 'eur') {
+      const eur = parseFloat(document.getElementById('eur-input').value) || 0;
+      document.getElementById('usd-input').value = (eur * EUR_TO_USD).toFixed(2);
+    } else {
+      const usd = parseFloat(document.getElementById('usd-input').value) || 0;
+      document.getElementById('eur-input').value = (usd / EUR_TO_USD).toFixed(2);
+    }
+  }
+
+  function swapCurrency() {
+    const eurVal = document.getElementById('eur-input').value;
+    const usdVal = document.getElementById('usd-input').value;
+    document.getElementById('eur-input').value = usdVal;
+    document.getElementById('usd-input').value = eurVal;
+    convertCurrency('eur');
+  }
+
+  function setEur(amount) {
+    document.getElementById('eur-input').value = amount;
+    convertCurrency('eur');
+  }
+
+  // ─── PACKING LIST ───
+  const PACK_KEY = 'spain2025_packing';
+
+  function loadPacking() {
+    try { return JSON.parse(localStorage.getItem(PACK_KEY)) || {}; } catch { return {}; }
+  }
+  function savePacking(state) {
+    try { localStorage.setItem(PACK_KEY, JSON.stringify(state)); } catch {}
+  }
+
+  function togglePack(el) {
+    el.classList.toggle('packed');
+    const state = loadPacking();
+    const key = el.querySelector('span').textContent.trim().slice(0,40);
+    state[key] = el.classList.contains('packed');
+    savePacking(state);
+    updatePackProgress();
+  }
+
+  function updatePackProgress() {
+    const items = document.querySelectorAll('.pack-item');
+    const packed = document.querySelectorAll('.pack-item.packed').length;
+    const total = items.length;
+    document.getElementById('pack-progress-text').textContent = `${packed} of ${total} packed`;
+    document.getElementById('pack-prog-fill').style.width = `${(packed/total)*100}%`;
+  }
+
+  // Restore packing on load
+  const packState = loadPacking();
+  document.querySelectorAll('.pack-item').forEach(el => {
+    const key = el.querySelector('span').textContent.trim().slice(0,40);
+    if (packState[key]) el.classList.add('packed');
+  });
+  updatePackProgress();
+
+  // ─── PHRASES ───
+  function filterPhrases(cat, btn) {
+    document.querySelectorAll('.phrase-filter').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.phrase-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) card.style.display = '';
+      else card.style.display = 'none';
+    });
+  }
+
+  function copyPhrase(el, text) {
+    navigator.clipboard.writeText(text).catch(()=>{});
+    el.classList.add('copied');
+    setTimeout(() => el.classList.remove('copied'), 1500);
+  }
+</script>
+
+</body>
+</html>
